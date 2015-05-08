@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="" method="get">
+  <p>
+  <input type=text name=start />
+  <input type=text name=end />
+  <input type="submit" />
+  <p> format: %d-%m-%y
+</form>
+<h3>Records for {{startTime}} to {{endTime}}</h3>
+<ul>
+  {% for item in records %}
+  <li>{{item}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
