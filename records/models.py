@@ -75,3 +75,4 @@ def toLoadDate(year, month, day, timestamp):
   dateFormat = "%Y %b %d %H:%M:%S"
   dateString = year + " "  + month + " " + day + " " + timestamp
   date = datetime.strptime(dateString, dateFormat)
+  return date
