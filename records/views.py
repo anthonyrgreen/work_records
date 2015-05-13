@@ -1,6 +1,6 @@
 from records import app, request
 from flask import render_template
-from models import Timestamps, queryRecord, addRecord
+from models import Timestamps, queryRecord, addRecord, addModuleLog
 from datetime import datetime, date
 
 @app.route('/')
@@ -16,11 +16,6 @@ def submit():
     return 'submitted.'
   else:
     return render_template("submit.html")
-    #return '''
-    #  <form action="" method="post">
-    #    <p><input type=text name=date>
-    #  </form>
-    #'''
 
 @app.route('/view')
 def view():
@@ -34,10 +29,14 @@ def view():
                          endTime=endTime,
                          records=dates)
 
-#@app.route('/view')
-#def view():
-#  start = request.args.get('start')
-#  end = request.args.get('end')
-#  startTime = datetime.strptime(start, "%d-%m-%y")
-#  endTime = datetime.strptime(end, "%d-%m-%y")
-#  return jsonify(dates=str(queryRecord(startTime, endTime)))
+@app.route('/submitmodulelogs', methods=["GET","POST"])
+def submitModuleLogs():
+  if request.method == 'POST':
+    file = request.files['log']
+    if file:
+      addModuleLog(file)
+      return "submitted."
+    else:
+      return "error in file submission."
+  else:
+    return render_template("submitModuleLogs.html")
