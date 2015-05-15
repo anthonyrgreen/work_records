@@ -40,3 +40,10 @@ def submitModuleLogs():
       return "error in file submission."
   else:
     return render_template("submitModuleLogs.html")
+
+@app.route('/viewmodulelogs', methods=["GET","POST"])
+def viewModuleLogs():
+  if request.method == "POST":
+    return "This page doesn't exist yet."
+  else:
+    return render_template("viewModuleLogs.html")

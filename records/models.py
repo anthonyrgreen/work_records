@@ -24,9 +24,15 @@ def addRecord(timestamp):
 
 #class Package(db.Model):
 #  __tablename__ = 'package'
-#  id = db.Column(db.Integer, primary_key-True)
+#  id = db.Column(db.Integer, primary_key=True)
 #  package = db.Column(db.String, index=True)
+#  version = db.Column(db.String, unique=True)
+#
+#class Version(db.Model):
+#  __tablename__ = 'version'
+#  id = db.Column(db.Integer, primary_key=True)
 #  version = db.Column(db.String)
+#  package_id = Column(db.Integer, db.ForeignKey('package.id'))
 #
 #class User(db.Model):
 #  __tablename__ = 'user'
