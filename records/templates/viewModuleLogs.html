@@ -3,12 +3,41 @@
 
 <script src="{{ url_for('static', filename='viewModulelogs.js') }}"></script>
 
-<h1> View Records by:</h1>
-<form action="" method="GET" id="outputType">
-  <input type="radio" name="outputRequest" value="date"/> Date
-  <input type="radio" name="outputRequest" value="user"/> User
-  <input type="radio" name="outputRequest" value="package"/> Package
+
+<form action="" method="GET" id="requestForm">
+  <p>Start date: <input type="text" name="startMonth" size="2" maxlength="2"> -
+                 <input type="text" name="startDay" size="2" maxlength="2"> -
+                 <input type="text" name="startYear" size="4" maxlength="4"> : Month - Day - Year
+  <p>End date: <input type="text" name="endMonth" size="2" maxlength="2"> -
+               <input type="text" name="endDay" size="2" maxlength="2"> -
+               <input type="text" name="endYear" size="4" maxlength="4"> : Month - Day - Year
+  <p>Aggregate by:
   <p>
-  <input type="submit" value="OK" />
+  <input type="radio" name="dateAggregation" value="day"> day 
+  <input type="radio" name="dateAggregation" value="week"> week 
+  <input type="radio" name="dateAggregation" value="month"> month 
+  <input type="radio" name="dateAggregation" value="timespan"> whole timespan
+  <p>
+  <input type="checkbox" name="outputRequest" value="user"/> User <br>
+  <input type="checkbox" name="outputRequest" value="package"/> Package <br>
+  <input type="checkbox" name="outputRequest" value="version" disabled/> Version <br>
+  <p>
+  <p><input type="Submit"/>
 </form>
+
+{% if withLogs %}
+<div id="results">
+  <ul>
+    {% for log in logs %}
+    <li>{{log[0]}}
+      <ul>
+        {% for entry in log[1] %}
+        <li>{{entry}}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
 {% endblock %}

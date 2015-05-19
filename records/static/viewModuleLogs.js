@@ -1,5 +1,5 @@
 $(function () {
-  $("#outputType").submit(function (event) {
+  /*$("#outputType").submit(function (event) {
     event.preventDefault();
     formdata = $("#outputType").serializeArray();
     if(formdata.length != 0)
@@ -25,12 +25,18 @@ $(function () {
       }
     }
     event.preventDefault();
+  });*/
+  $("input[value='package']").change( function () {
+    console.log("fired.");
+    if ($(this)[0].checked) {
+      $("input[value='version']").prop("disabled", false);
+      console.log("should be enabled");
+    }
+    else {
+      console.log("should be disabled");
+      $("input[value='version']").prop("checked", false);
+      $("input[value='version']").prop("disabled", true);
+    }
   });
+  
 });
-
-timeForm =  '<p> For which times would you like data?' +
-            '<form action="" method="get" id="dateForm">' +
-              '<p>Start date: <input type="text" name="startDate">' +
-              '<p>End date: <input type="text" name="endDate">' +
-              '<p><input type="Submit"/>' +
-            '</form>';

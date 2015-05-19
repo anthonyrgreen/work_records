@@ -1,50 +1,5 @@
 from records import db
-from datetime import date, datetime
-
-class Timestamps(db.Model):
-  id = db.Column(db.Integer, primary_key=True)
-  time = db.Column(db.DateTime, index=True)
-  def __init__(self, time):
-    self.time = time
-  def __repr__(self):
-    return '<id %d: Timestamp %s>' % (self.id, self.time)
-
-
-def queryRecord(start, end):
-  startTime = datetime.combine(start, datetime.min.time())
-  endTime = datetime.combine(end, datetime.max.time())
-  return Timestamps.query \
-                   .filter(Timestamps.time>=startTime, Timestamps.time<=endTime) \
-                   .all()
-
-def addRecord(timestamp):
-  record = Timestamps(time=timestamp)
-  db.session.add(record)
-  db.session.commit()
-
-#class Package(db.Model):
-#  __tablename__ = 'package'
-#  id = db.Column(db.Integer, primary_key=True)
-#  package = db.Column(db.String, index=True)
-#  version = db.Column(db.String, unique=True)
-#
-#class Version(db.Model):
-#  __tablename__ = 'version'
-#  id = db.Column(db.Integer, primary_key=True)
-#  version = db.Column(db.String)
-#  package_id = Column(db.Integer, db.ForeignKey('package.id'))
-#
-#class User(db.Model):
-#  __tablename__ = 'user'
-#  id = db.Column(db.Integer, primary_key=True)
-#  packages = db.relationship('Package',
-#    secondary=user_packages,
-#    backref='users'
-#
-#user_packages = db.Table('user_packages',
-#  db.Column('user_id', db.Integer, db.ForeignKey('User.id')),
-#  db.Column('package_id', db.Integer, db.ForeignKey('Package.id'))
-#)
+from datetime import date, datetime, timedelta
 
 class ModuleLoadRecord(db.Model):
   id = db.Column(db.Integer, primary_key=True)
@@ -52,6 +7,8 @@ class ModuleLoadRecord(db.Model):
   package = db.Column(db.String)
   version = db.Column(db.String)
   user = db.Column(db.String)
+  filename = db.Column(db.String) # the log from which this was pulled
+                                  # (in case of malformed input)
   
   def addRecord(record):
     db.session.add(record)
@@ -65,20 +22,10 @@ class ModuleLoadRecord(db.Model):
   def __repr__(self):
     return '%s %s %s %s' % (self.package, self.version, self.user, self.loadDate)
 
+class User(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  username = db.Column(db.Integer, unique=True)
 
-def addModuleLog(f):
-  for line in f:
-    logLine = line.split()
-    loadDate = toLoadDate("2015", logLine[0], logLine[1], logLine[2])
-    user = logLine[4][:-1]
-    package = logLine[5]
-    version = logLine[6]
-
-    record = ModuleLoadRecord(loadDate, package, version, user)
-    ModuleLoadRecord.addRecord(record)
-
-def toLoadDate(year, month, day, timestamp):
-  dateFormat = "%Y %b %d %H:%M:%S"
-  dateString = year + " "  + month + " " + day + " " + timestamp
-  date = datetime.strptime(dateString, dateFormat)
-  return date
+class Package(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  packageName = db.Column(db.Integer, unique=True)

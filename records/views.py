@@ -1,36 +1,11 @@
 from records import app, request
 from flask import render_template
-from models import Timestamps, queryRecord, addRecord, addModuleLog
+from modelController import addModuleLog, getLogs
 from datetime import datetime, date
-
-@app.route('/')
-@app.route('/index')
-def index():
-	return 'Hello, World!'
-
-@app.route('/submit', methods=['GET','POST'])
-def submit():
-  if request.method == 'POST':
-    formTime = request.form['date']
-    time = datetime.strptime(formTime, "%d-%m-%y %H:%M")
-    return 'submitted.'
-  else:
-    return render_template("submit.html")
-
-@app.route('/view')
-def view():
-  start = request.args.get('start')
-  end = request.args.get('end')
-  startTime = datetime.strptime(start, "%d-%m-%y")
-  endTime = datetime.strptime(end, "%d-%m-%y")
-  dates = queryRecord(startTime, endTime)
-  return render_template("view.html",
-                         startTime=startTime,
-                         endTime=endTime,
-                         records=dates)
 
 @app.route('/submitmodulelogs', methods=["GET","POST"])
 def submitModuleLogs():
+  # TODO: all input must be sanitized
   if request.method == 'POST':
     file = request.files['log']
     if file:
@@ -41,9 +16,36 @@ def submitModuleLogs():
   else:
     return render_template("submitModuleLogs.html")
 
-@app.route('/viewmodulelogs', methods=["GET","POST"])
+@app.route('/')
+@app.route('/index')
+@app.route('/viewmodulelogs')
 def viewModuleLogs():
-  if request.method == "POST":
-    return "This page doesn't exist yet."
-  else:
-    return render_template("viewModuleLogs.html")
+  # TODO: figure out better way of telling if request is made or not
+  if 'startMonth' not in request.args:
+    return render_template("viewModuleLogs.html",
+      withLogs = False)
+  # TODO: all input must be sanitized
+  startDay = request.args.get('startDay')
+  startMonth = request.args.get('startMonth')
+  startYear = request.args.get('startYear')
+  endDay = request.args.get('endDay')
+  endMonth = request.args.get('endMonth')
+  endYear = request.args.get('endYear')
+
+  # Get times
+  startTimeStr = startDay + '-' + startMonth + '-' + startYear
+  endTimeStr = endDay + '-' + endMonth + '-' + endYear
+  startTime = datetime.strptime(startTimeStr, "%d-%m-%Y")
+  endTime = datetime.strptime(endTimeStr, "%d-%m-%Y")
+
+  # Get options
+  aggregationOptions = request.args.getlist('outputRequest')
+  timeInterval = request.args.get('dateAggregation')
+  
+  # Pass off to models
+  logs = getLogs(startTime, endTime, timeInterval, aggregationOptions)
+
+  return render_template("viewModuleLogs.html",
+    withLogs = True,
+    logs = logs)
+
