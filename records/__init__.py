@@ -10,4 +10,6 @@ db = SQLAlchemy(app)
 # Templating setup
 env = Environment(loader=PackageLoader('records', 'templates'))
 
-from records import views, models, modelController
+from records import models
+from records import modelController, modelScripts
+from records import views

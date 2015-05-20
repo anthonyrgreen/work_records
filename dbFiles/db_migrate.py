@@ -1,4 +1,6 @@
-#!flask/bin/python
+#!../flask/bin/python
+import sys
+sys.path.insert(0,'..')
 import imp
 from migrate.versioning import api
 from records import db

@@ -1,4 +1,4 @@
-app.db
+dbFiles/app.db
 *.swp
 *.pyc
 test/

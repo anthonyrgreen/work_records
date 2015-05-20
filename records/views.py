@@ -1,6 +1,6 @@
 from records import app, request
 from flask import render_template
-from modelController import addModuleLog, getLogs
+from modelController import addModuleLogFile, getLogs
 from datetime import datetime, date
 
 @app.route('/submitmodulelogs', methods=["GET","POST"])
@@ -9,7 +9,7 @@ def submitModuleLogs():
   if request.method == 'POST':
     file = request.files['log']
     if file:
-      addModuleLog(file)
+      addModuleLogFile(file)
       return "submitted."
     else:
       return "error in file submission."
