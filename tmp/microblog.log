@@ -1,0 +1,1837 @@
+
+2015-05-27 11:27:51,620 INFO: microblog startup [in records/__init__.py:20]
+2015-05-27 11:44:31,235 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-27 13:38:53,541 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 13:38:53,878 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 13:38:58,565 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 13:38:58,905 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 13:39:17,675 INFO: microblog startup [in records/__init__.py:20]
+2015-05-27 13:39:59,690 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-01-01 00:00:00.000000', '2013-02-01 00:00:00.000000')
+Duration: 12.470537s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,690 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-02-01 00:00:00.000000', '2013-03-01 00:00:00.000000')
+Duration: 1.319286s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,690 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-03-01 00:00:00.000000', '2013-04-01 00:00:00.000000')
+Duration: 1.300426s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,691 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-04-01 00:00:00.000000', '2013-05-01 00:00:00.000000')
+Duration: 1.265762s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,691 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-05-01 00:00:00.000000', '2013-06-01 00:00:00.000000')
+Duration: 1.244229s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,691 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 1.537910s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,691 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-07-01 00:00:00.000000', '2013-08-01 00:00:00.000000')
+Duration: 1.473114s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,692 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-08-01 00:00:00.000000', '2013-09-01 00:00:00.000000')
+Duration: 1.293288s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,692 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-09-01 00:00:00.000000', '2013-10-01 00:00:00.000000')
+Duration: 1.417454s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,692 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-10-01 00:00:00.000000', '2013-11-01 00:00:00.000000')
+Duration: 1.247699s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,692 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-11-01 00:00:00.000000', '2013-12-01 00:00:00.000000')
+Duration: 1.318971s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,692 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-12-01 00:00:00.000000', '2014-01-01 00:00:00.000000')
+Duration: 1.252213s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,693 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-01-01 00:00:00.000000', '2014-02-01 00:00:00.000000')
+Duration: 1.316479s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,693 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-02-01 00:00:00.000000', '2014-03-01 00:00:00.000000')
+Duration: 1.393865s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,693 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-03-01 00:00:00.000000', '2014-04-01 00:00:00.000000')
+Duration: 1.236151s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,693 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-04-01 00:00:00.000000', '2014-05-01 00:00:00.000000')
+Duration: 1.385357s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,694 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-05-01 00:00:00.000000', '2014-06-01 00:00:00.000000')
+Duration: 1.424442s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,694 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 1.537528s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,694 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-07-01 00:00:00.000000', '2014-08-01 00:00:00.000000')
+Duration: 1.343935s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,694 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-08-01 00:00:00.000000', '2014-09-01 00:00:00.000000')
+Duration: 1.199132s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,694 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-09-01 00:00:00.000000', '2014-10-01 00:00:00.000000')
+Duration: 1.163319s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,695 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 1.449518s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,695 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 1.352282s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,695 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 1.432594s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,695 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 1.247426s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,695 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 1.237797s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,696 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 1.391180s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,696 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.654662s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,696 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-05-01 00:00:00.000000', '2015-06-01 00:00:00.000000')
+Duration: 1.028856s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,696 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-06-01 00:00:00.000000', '2015-07-01 00:00:00.000000')
+Duration: 1.004058s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,696 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-07-01 00:00:00.000000', '2015-08-01 00:00:00.000000')
+Duration: 0.976378s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,697 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-08-01 00:00:00.000000', '2015-09-01 00:00:00.000000')
+Duration: 0.973801s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,697 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-09-01 00:00:00.000000', '2015-10-01 00:00:00.000000')
+Duration: 0.999787s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,697 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-10-01 00:00:00.000000', '2015-11-01 00:00:00.000000')
+Duration: 0.914016s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,697 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-11-01 00:00:00.000000', '2015-12-01 00:00:00.000000')
+Duration: 0.907198s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:39:59,698 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-12-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 0.968635s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,431 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-01-01 00:00:00.000000', '2013-02-01 00:00:00.000000')
+Duration: 1.310622s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,431 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-02-01 00:00:00.000000', '2013-03-01 00:00:00.000000')
+Duration: 1.394300s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,431 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-03-01 00:00:00.000000', '2013-04-01 00:00:00.000000')
+Duration: 1.416716s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,431 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-04-01 00:00:00.000000', '2013-05-01 00:00:00.000000')
+Duration: 1.401362s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,432 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-05-01 00:00:00.000000', '2013-06-01 00:00:00.000000')
+Duration: 1.347594s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,432 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 1.667658s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,432 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-07-01 00:00:00.000000', '2013-08-01 00:00:00.000000')
+Duration: 1.457201s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,432 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-08-01 00:00:00.000000', '2013-09-01 00:00:00.000000')
+Duration: 1.274997s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,433 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-09-01 00:00:00.000000', '2013-10-01 00:00:00.000000')
+Duration: 1.420110s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,433 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-10-01 00:00:00.000000', '2013-11-01 00:00:00.000000')
+Duration: 1.257488s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,433 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-11-01 00:00:00.000000', '2013-12-01 00:00:00.000000')
+Duration: 1.258553s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,433 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-12-01 00:00:00.000000', '2014-01-01 00:00:00.000000')
+Duration: 1.278861s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,433 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-01-01 00:00:00.000000', '2014-02-01 00:00:00.000000')
+Duration: 1.307467s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,434 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-02-01 00:00:00.000000', '2014-03-01 00:00:00.000000')
+Duration: 1.395210s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,434 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-03-01 00:00:00.000000', '2014-04-01 00:00:00.000000')
+Duration: 1.274982s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,434 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-04-01 00:00:00.000000', '2014-05-01 00:00:00.000000')
+Duration: 1.379957s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,434 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-05-01 00:00:00.000000', '2014-06-01 00:00:00.000000')
+Duration: 1.353330s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,434 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 1.520500s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,435 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-07-01 00:00:00.000000', '2014-08-01 00:00:00.000000')
+Duration: 1.251598s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,435 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-08-01 00:00:00.000000', '2014-09-01 00:00:00.000000')
+Duration: 1.206046s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,435 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-09-01 00:00:00.000000', '2014-10-01 00:00:00.000000')
+Duration: 1.123725s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,435 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 1.515127s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,436 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 1.281398s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,436 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 1.406383s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,436 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 1.278982s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,436 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 1.200231s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,436 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 1.346080s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,437 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.529771s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,437 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-05-01 00:00:00.000000', '2015-06-01 00:00:00.000000')
+Duration: 0.993605s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,437 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-06-01 00:00:00.000000', '2015-07-01 00:00:00.000000')
+Duration: 1.000365s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,437 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-07-01 00:00:00.000000', '2015-08-01 00:00:00.000000')
+Duration: 0.956371s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,437 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-08-01 00:00:00.000000', '2015-09-01 00:00:00.000000')
+Duration: 0.980197s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,438 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-09-01 00:00:00.000000', '2015-10-01 00:00:00.000000')
+Duration: 0.960148s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,438 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-10-01 00:00:00.000000', '2015-11-01 00:00:00.000000')
+Duration: 1.004065s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,438 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-11-01 00:00:00.000000', '2015-12-01 00:00:00.000000')
+Duration: 0.965532s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:40:47,438 WARNING: SLOW QUERY: SELECT count(moduleloadrecords.module) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-12-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 0.958104s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:177 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 13:59:10,636 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 13:59:15,066 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:00:55,603 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:01:14,155 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:01:23,672 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:02:16,152 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-01-01 00:00:00.000000', '2013-02-01 00:00:00.000000')
+Duration: 12.106467s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,153 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-02-01 00:00:00.000000', '2013-03-01 00:00:00.000000')
+Duration: 1.245156s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,153 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-03-01 00:00:00.000000', '2013-04-01 00:00:00.000000')
+Duration: 1.299589s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,153 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-04-01 00:00:00.000000', '2013-05-01 00:00:00.000000')
+Duration: 1.279678s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,154 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-05-01 00:00:00.000000', '2013-06-01 00:00:00.000000')
+Duration: 1.261164s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,154 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 1.255000s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,154 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-07-01 00:00:00.000000', '2013-08-01 00:00:00.000000')
+Duration: 1.215554s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,155 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-08-01 00:00:00.000000', '2013-09-01 00:00:00.000000')
+Duration: 1.230409s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,155 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-09-01 00:00:00.000000', '2013-10-01 00:00:00.000000')
+Duration: 1.216432s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,155 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-10-01 00:00:00.000000', '2013-11-01 00:00:00.000000')
+Duration: 1.204914s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,156 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-11-01 00:00:00.000000', '2013-12-01 00:00:00.000000')
+Duration: 1.203500s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,156 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2013-12-01 00:00:00.000000', '2014-01-01 00:00:00.000000')
+Duration: 1.179794s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,156 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-01-01 00:00:00.000000', '2014-02-01 00:00:00.000000')
+Duration: 1.192672s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,157 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-02-01 00:00:00.000000', '2014-03-01 00:00:00.000000')
+Duration: 1.180293s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,157 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-03-01 00:00:00.000000', '2014-04-01 00:00:00.000000')
+Duration: 1.184362s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,157 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-04-01 00:00:00.000000', '2014-05-01 00:00:00.000000')
+Duration: 1.139456s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,158 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-05-01 00:00:00.000000', '2014-06-01 00:00:00.000000')
+Duration: 1.163708s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,158 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 1.131785s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,158 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-07-01 00:00:00.000000', '2014-08-01 00:00:00.000000')
+Duration: 1.122205s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,159 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-08-01 00:00:00.000000', '2014-09-01 00:00:00.000000')
+Duration: 1.116685s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,159 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-09-01 00:00:00.000000', '2014-10-01 00:00:00.000000')
+Duration: 1.071239s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,159 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 1.090026s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,160 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 1.061973s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,160 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 1.032685s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,160 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 1.006757s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,161 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 0.985120s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,161 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 0.975068s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,161 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 0.944605s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,162 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-05-01 00:00:00.000000', '2015-06-01 00:00:00.000000')
+Duration: 0.905806s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,162 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-06-01 00:00:00.000000', '2015-07-01 00:00:00.000000')
+Duration: 0.904145s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,162 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-07-01 00:00:00.000000', '2015-08-01 00:00:00.000000')
+Duration: 0.923667s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,163 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-08-01 00:00:00.000000', '2015-09-01 00:00:00.000000')
+Duration: 0.877253s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,163 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-09-01 00:00:00.000000', '2015-10-01 00:00:00.000000')
+Duration: 0.918254s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,164 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-10-01 00:00:00.000000', '2015-11-01 00:00:00.000000')
+Duration: 0.907475s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,164 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-11-01 00:00:00.000000', '2015-12-01 00:00:00.000000')
+Duration: 0.892675s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:02:16,164 WARNING: SLOW QUERY: SELECT count(*) AS count_1 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ?
+Parameters: ('2015-12-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 0.919823s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,081 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-01-01 00:00:00.000000', '2013-02-01 00:00:00.000000')
+Duration: 1.355473s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,081 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-02-01 00:00:00.000000', '2013-03-01 00:00:00.000000')
+Duration: 1.307653s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,081 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-03-01 00:00:00.000000', '2013-04-01 00:00:00.000000')
+Duration: 1.299225s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,082 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-04-01 00:00:00.000000', '2013-05-01 00:00:00.000000')
+Duration: 1.452042s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,082 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-05-01 00:00:00.000000', '2013-06-01 00:00:00.000000')
+Duration: 1.271454s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,082 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 1.523172s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,083 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-07-01 00:00:00.000000', '2013-08-01 00:00:00.000000')
+Duration: 1.428781s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,083 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-08-01 00:00:00.000000', '2013-09-01 00:00:00.000000')
+Duration: 1.351850s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,083 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-09-01 00:00:00.000000', '2013-10-01 00:00:00.000000')
+Duration: 1.467111s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,083 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-10-01 00:00:00.000000', '2013-11-01 00:00:00.000000')
+Duration: 1.243204s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,083 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-11-01 00:00:00.000000', '2013-12-01 00:00:00.000000')
+Duration: 1.259850s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,084 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-12-01 00:00:00.000000', '2014-01-01 00:00:00.000000')
+Duration: 1.208103s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,084 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-01-01 00:00:00.000000', '2014-02-01 00:00:00.000000')
+Duration: 1.412656s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,084 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-02-01 00:00:00.000000', '2014-03-01 00:00:00.000000')
+Duration: 1.374424s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,084 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-03-01 00:00:00.000000', '2014-04-01 00:00:00.000000')
+Duration: 1.239874s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,085 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-04-01 00:00:00.000000', '2014-05-01 00:00:00.000000')
+Duration: 1.471246s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,085 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-05-01 00:00:00.000000', '2014-06-01 00:00:00.000000')
+Duration: 1.328760s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,085 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 1.509722s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,085 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-07-01 00:00:00.000000', '2014-08-01 00:00:00.000000')
+Duration: 1.347821s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,085 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-08-01 00:00:00.000000', '2014-09-01 00:00:00.000000')
+Duration: 1.292750s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,086 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-09-01 00:00:00.000000', '2014-10-01 00:00:00.000000')
+Duration: 1.250614s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,086 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 1.573067s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,086 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 1.420744s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,086 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 1.462385s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,087 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 1.418919s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,087 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 1.263760s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,087 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 1.450158s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,087 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.598865s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,087 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-05-01 00:00:00.000000', '2015-06-01 00:00:00.000000')
+Duration: 0.970772s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,088 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-06-01 00:00:00.000000', '2015-07-01 00:00:00.000000')
+Duration: 0.990255s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,088 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-07-01 00:00:00.000000', '2015-08-01 00:00:00.000000')
+Duration: 0.985284s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,088 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-08-01 00:00:00.000000', '2015-09-01 00:00:00.000000')
+Duration: 1.007988s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,088 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-09-01 00:00:00.000000', '2015-10-01 00:00:00.000000')
+Duration: 1.000988s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,089 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-10-01 00:00:00.000000', '2015-11-01 00:00:00.000000')
+Duration: 0.983305s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,089 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-11-01 00:00:00.000000', '2015-12-01 00:00:00.000000')
+Duration: 0.988754s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:03:54,089 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-12-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 0.961085s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:145 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:05:29,705 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:05:38,156 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:06:27,024 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-01-01 00:00:00.000000', '2013-02-01 00:00:00.000000')
+Duration: 1.354561s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,025 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-02-01 00:00:00.000000', '2013-03-01 00:00:00.000000')
+Duration: 1.276159s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,025 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-03-01 00:00:00.000000', '2013-04-01 00:00:00.000000')
+Duration: 1.265808s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,025 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-04-01 00:00:00.000000', '2013-05-01 00:00:00.000000')
+Duration: 1.246624s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,026 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-05-01 00:00:00.000000', '2013-06-01 00:00:00.000000')
+Duration: 1.249512s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,026 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 1.651549s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,026 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-07-01 00:00:00.000000', '2013-08-01 00:00:00.000000')
+Duration: 1.518029s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,027 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-08-01 00:00:00.000000', '2013-09-01 00:00:00.000000')
+Duration: 1.370344s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,027 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-09-01 00:00:00.000000', '2013-10-01 00:00:00.000000')
+Duration: 1.497904s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,027 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-10-01 00:00:00.000000', '2013-11-01 00:00:00.000000')
+Duration: 1.267340s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,027 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-11-01 00:00:00.000000', '2013-12-01 00:00:00.000000')
+Duration: 1.335477s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,028 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2013-12-01 00:00:00.000000', '2014-01-01 00:00:00.000000')
+Duration: 1.329199s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,028 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-01-01 00:00:00.000000', '2014-02-01 00:00:00.000000')
+Duration: 1.333422s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,028 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-02-01 00:00:00.000000', '2014-03-01 00:00:00.000000')
+Duration: 1.396731s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,028 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-03-01 00:00:00.000000', '2014-04-01 00:00:00.000000')
+Duration: 1.227160s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,028 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-04-01 00:00:00.000000', '2014-05-01 00:00:00.000000')
+Duration: 1.474638s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,029 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-05-01 00:00:00.000000', '2014-06-01 00:00:00.000000')
+Duration: 1.221429s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,029 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 1.416219s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,029 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-07-01 00:00:00.000000', '2014-08-01 00:00:00.000000')
+Duration: 1.206624s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,029 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-08-01 00:00:00.000000', '2014-09-01 00:00:00.000000')
+Duration: 1.183227s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,030 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-09-01 00:00:00.000000', '2014-10-01 00:00:00.000000')
+Duration: 1.124760s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,030 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 1.438587s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,030 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 1.283218s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,030 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 1.441259s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,030 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 1.247834s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,031 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 1.215132s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,031 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 1.369007s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,031 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.461201s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,031 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-05-01 00:00:00.000000', '2015-06-01 00:00:00.000000')
+Duration: 0.900630s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,032 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-06-01 00:00:00.000000', '2015-07-01 00:00:00.000000')
+Duration: 0.916354s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,032 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-07-01 00:00:00.000000', '2015-08-01 00:00:00.000000')
+Duration: 0.930598s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,032 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-08-01 00:00:00.000000', '2015-09-01 00:00:00.000000')
+Duration: 0.915020s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,032 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-09-01 00:00:00.000000', '2015-10-01 00:00:00.000000')
+Duration: 0.919457s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,032 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-10-01 00:00:00.000000', '2015-11-01 00:00:00.000000')
+Duration: 0.905371s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,033 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-11-01 00:00:00.000000', '2015-12-01 00:00:00.000000')
+Duration: 0.890548s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:06:27,033 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-12-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 0.933804s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:146 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 14:09:02,998 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:13:00,439 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:13:18,006 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:13:36,624 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:14:24,522 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:14:40,057 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:14:41,433 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:41:19,773 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:42:28,297 INFO: microblog startup [in records/__init__.py:20]
+2015-05-27 14:45:18,836 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:45:49,632 INFO: microblog startup [in records/__init__.py:20]
+2015-05-27 14:52:05,924 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:53:42,299 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:53:58,840 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:56:08,526 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-27 14:56:45,921 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-27 14:57:48,795 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:57:51,377 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-27 14:59:34,380 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 14:59:38,792 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:04:43,500 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:04:48,914 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:05:34,784 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:05:50,326 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:06:10,915 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:43:08,762 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:43:49,015 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:43:49,374 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 15:44:06,321 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 13.711733s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:141 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 15:44:31,717 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.518557s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:141 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 15:44:41,926 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.573110s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:141 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 15:45:25,410 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 1.472315s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:141 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 15:45:25,410 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.614927s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:141 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 15:45:36,128 WARNING: SLOW QUERY: SELECT count(*) AS count_1, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.547834s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:141 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:01:26,991 INFO: microblog startup [in records/__init__.py:20]
+2015-05-27 16:17:35,356 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:18:33,755 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:18:34,195 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:18:51,726 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 16.248045s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:143 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:20:51,434 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:20:55,803 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total ASC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.722130s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:143 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:21:42,410 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:23:48,192 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:24:13,829 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:24:28,504 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:25:49,727 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:27:19,184 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:30:19,872 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:51:33,193 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:51:41,558 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:51:41,914 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:52:07,589 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:52:58,554 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:53:02,939 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:53:24,559 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:53:37,101 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:53:53,698 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 16.328368s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:162 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:54:10,793 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:54:15,304 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.689505s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:162 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:54:47,605 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:55:13,295 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:55:16,965 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.801841s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:163 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:55:53,168 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:55:57,175 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.777675s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:163 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:56:20,088 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.634307s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:163 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:62]
+2015-05-27 16:56:58,308 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:57:05,735 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:57:33,457 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:57:36,905 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:57:40,613 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.730642s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:165 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-27 16:58:03,967 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:58:04,340 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 16:58:08,842 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.704270s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:165 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-27 16:59:27,020 INFO: microblog startup [in records/__init__.py:20]
+2015-05-27 17:02:04,840 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:02:32,474 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY moduleloadrecords.module DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 16.071972s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:165 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-27 17:02:54,679 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:03:12,239 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:03:57,172 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:04:26,854 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:04:55,579 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:05:41,801 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:05:47,809 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:05:48,165 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:06:00,670 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-27 17:06:11,164 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:36:27,227 INFO: microblog startup [in records/__init__.py:20]
+2015-05-28 10:37:08,580 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 10:37:49,721 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:37:50,070 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:38:33,061 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 10:40:06,011 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 10:42:49,914 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 10:47:48,028 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:47:48,391 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:47:50,024 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY moduleloadrecords.module DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.215510s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:48:11,194 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY moduleloadrecords.module DESC
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 0.514786s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:48:11,194 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY moduleloadrecords.module DESC
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 0.913576s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:48:11,194 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY moduleloadrecords.module DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.278968s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:49:19,233 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:49:19,596 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 10:49:24,145 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 0.535661s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:49:24,146 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 0.504841s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:49:24,146 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 0.845145s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:49:24,146 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.293751s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,029 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 2.743746s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,029 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-07-01 00:00:00.000000', '2013-08-01 00:00:00.000000')
+Duration: 2.133788s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,030 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-08-01 00:00:00.000000', '2013-09-01 00:00:00.000000')
+Duration: 0.686428s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,030 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-09-01 00:00:00.000000', '2013-10-01 00:00:00.000000')
+Duration: 2.054044s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,031 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-10-01 00:00:00.000000', '2013-11-01 00:00:00.000000')
+Duration: 0.673345s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,031 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-11-01 00:00:00.000000', '2013-12-01 00:00:00.000000')
+Duration: 0.638206s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,032 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-12-01 00:00:00.000000', '2014-01-01 00:00:00.000000')
+Duration: 0.524789s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,032 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-01-01 00:00:00.000000', '2014-02-01 00:00:00.000000')
+Duration: 1.431245s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,033 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-02-01 00:00:00.000000', '2014-03-01 00:00:00.000000')
+Duration: 2.071782s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,033 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-03-01 00:00:00.000000', '2014-04-01 00:00:00.000000')
+Duration: 1.100124s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,033 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-04-01 00:00:00.000000', '2014-05-01 00:00:00.000000')
+Duration: 2.454685s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,034 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-05-01 00:00:00.000000', '2014-06-01 00:00:00.000000')
+Duration: 1.086996s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,034 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 2.827072s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,035 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-07-01 00:00:00.000000', '2014-08-01 00:00:00.000000')
+Duration: 1.536907s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,035 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-08-01 00:00:00.000000', '2014-09-01 00:00:00.000000')
+Duration: 0.964267s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,035 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-09-01 00:00:00.000000', '2014-10-01 00:00:00.000000')
+Duration: 0.562202s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,036 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 3.798094s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,036 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 2.297175s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,037 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 4.092120s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,037 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 2.393433s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,037 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 2.458556s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,038 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 3.664115s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:58:46,038 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 6.082252s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 10:59:31,132 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2012-01-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 11.500641s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 11:21:41,775 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 11:25:49,336 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 11:25:49,711 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 11:27:51,879 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:27:55,107 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:28:08,935 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:28:11,726 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:28:53,483 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:29:15,085 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:31:18,957 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:32:25,903 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:33:13,654 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:34:14,528 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:34:56,341 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 11:34:58,262 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:35:56,185 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:36:33,530 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:36:55,012 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 11:37:11,984 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:40:23,533 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:41:07,867 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:41:59,799 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:42:42,619 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:43:24,241 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:43:52,449 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:47:26,562 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:47:49,403 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:51:35,947 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:52:28,646 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:52:41,088 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:53:04,799 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:53:26,752 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:53:46,497 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:59:09,277 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:59:19,287 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 11:59:49,919 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 12:00:28,447 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 12:00:38,181 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 12:00:59,558 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 12:01:09,167 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 12:38:54,039 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2012-01-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 49.684734s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:39:06,214 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2012-01-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 12.072075s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:40:52,460 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2012-01-01 00:00:00.000000', '2016-01-01 00:00:00.000000')
+Duration: 11.698265s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,333 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2013-06-01 00:00:00.000000', '2013-07-01 00:00:00.000000')
+Duration: 0.584039s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,333 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-06-01 00:00:00.000000', '2014-07-01 00:00:00.000000')
+Duration: 0.649357s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,333 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-10-01 00:00:00.000000', '2014-11-01 00:00:00.000000')
+Duration: 0.894023s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,334 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-11-01 00:00:00.000000', '2014-12-01 00:00:00.000000')
+Duration: 0.570039s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,335 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2014-12-01 00:00:00.000000', '2015-01-01 00:00:00.000000')
+Duration: 0.864311s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,335 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-01-01 00:00:00.000000', '2015-02-01 00:00:00.000000')
+Duration: 0.566087s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,336 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-02-01 00:00:00.000000', '2015-03-01 00:00:00.000000')
+Duration: 0.526679s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,336 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-03-01 00:00:00.000000', '2015-04-01 00:00:00.000000')
+Duration: 0.871898s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 12:41:23,337 WARNING: SLOW QUERY: SELECT count(*) AS total, moduleloadrecords.module AS moduleloadrecords_module 
+FROM moduleloadrecords 
+WHERE moduleloadrecords."loadDate" >= ? AND moduleloadrecords."loadDate" < ? GROUP BY moduleloadrecords.module ORDER BY total DESC
+Parameters: ('2015-04-01 00:00:00.000000', '2015-05-01 00:00:00.000000')
+Duration: 1.224237s
+Context: /Users/anthonygreen/Work/records/records/modelController.py:167 (getOneLog)
+ [in /Users/anthonygreen/Work/records/records/views.py:61]
+2015-05-28 13:42:07,926 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 13:42:41,714 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 13:43:04,355 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 13:45:05,268 INFO: microblog startup [in /Users/anthonygreen/Work/records/records/__init__.py:20]
+2015-05-28 14:34:41,429 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:34:51,379 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:34:59,613 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:35:39,132 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:35:46,338 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:36:12,275 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:37:17,588 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:42:20,290 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:42:32,315 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:42:50,691 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:43:27,764 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:47:06,847 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:47:45,399 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:47:56,138 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:53:38,500 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:54:01,260 INFO: microblog startup [in ../records/__init__.py:20]
+2015-05-28 14:55:06,933 INFO: microblog startup [in ../records/__init__.py:20]

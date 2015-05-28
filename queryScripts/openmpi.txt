@@ -1,0 +1,665 @@
+
+###################
+('2015-02-01 00:00:00', '2015-03-01 00:00:00')
+###################
+
+60154     openmpi   1.6.5-intel-14.0.2-mxm-fca
+912       openmpi   1.6.0-intel-12.1
+779       openmpi   1.6.5-gcc-4.4.7-static
+444       openmpi   1.6.0-pgi-12.3
+281       openmpi   1.6.5-gcc-4.7-mxm-fca
+188       openmpi   1.8.llintel-14.0.2
+182       openmpi   1.6.0-gcc-4.7.0
+182       openmpi   1.8.2-intel-15.0.0-mxm-fca
+144       openmpi   1.6.5-intel-14.1-mxm-fca
+126       openmpi   1.6.5-intel-13.1-mxm-fca
+98        openmpi   1.8.1-gcc-4.8.0-mxm-fca
+70        openmpi   1.4.5-gcc-4.4.6
+53        openmpi   1.6.3-intel-12.1-mxm
+44        openmpi   1.6.0-gcc-4.4.6-static
+39        openmpi   1.6.5-intel-14.0.2
+25        openmpi   1.6.2-gcc-4.7.0
+14        openmpi   1.8.2-gcc-4.8.0-mxm-fca
+10        openmpi   1.6.0-gcc-4.4.6
+10        openmpi   1.6.2-intel-13.0
+9         openmpi   1.6.5-nagfor-4.4.7
+9         openmpi   1.8.1-intel-14.0.2-mxm-fca
+8         openmpi   1.6.2-intel-12.1
+6         openmpi   1.8.1-intel-13.0.1-mxm-fca
+5         openmpi   1.6.2-pgi-12.9
+4         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+3         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+3         openmpi   1.6.4-intel-12.1-mxm-fca
+1         openmpi   1.8.2-intel-14.0.2-mxm-fca
+
+###################
+('2015-01-01 00:00:00', '2015-02-01 00:00:00')
+###################
+
+80316     openmpi   1.6.5-intel-14.0.2-mxm-fca
+685       openmpi   1.6.0-intel-12.1
+654       openmpi   1.6.0-pgi-12.3
+475       openmpi   1.6.5-gcc-4.4.7-static
+205       openmpi   1.6.5-gcc-4.7-mxm-fca
+113       openmpi   1.8.2-intel-15.0.0-mxm-fca
+97        openmpi   1.6.0-gcc-4.7.0
+86        openmpi   1.6.5-intel-13.1-mxm-fca
+59        openmpi   1.4.5-gcc-4.4.6
+37        openmpi   1.8.1-gcc-4.8.0-mxm-fca
+33        openmpi   1.8.1-intel-14.0.2-mxm-fca
+25        openmpi   1.6.4-pgi-12.3-mxm-fca
+23        openmpi   1.6.2-gcc-4.7.0
+19        openmpi   1.6.2-intel-12.1
+19        openmpi   1.8.2-gcc-4.8.0-mxm-fca
+18        openmpi   1.6.5-intel-14.1-mxm-fca
+17        openmpi   1.6.0-gcc-4.4.6-static
+13        openmpi   1.6.3-intel-12.1-mxm
+6         openmpi   1.6.2-pgi-12.9
+6         openmpi   1.8.llintel-14.0.2
+3         openmpi   1.6.0-pgi-10.5
+2         openmpi   1.6.0-intel-11.1
+2         openmpi   1.8.2-intel-14.0.2-mxm-fca
+1         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+1         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+1         openmpi   1.6.4-intel-12.1-mxm-fca
+1         openmpi   1.8.2-gcc-4.4.7-mxm-fca
+
+###################
+('2014-12-01 00:00:00', '2015-01-01 00:00:00')
+###################
+
+84598     openmpi   1.6.5-intel-14.0.2-mxm-fca
+477       openmpi   1.6.0-intel-12.1
+415       openmpi   1.6.5-gcc-4.4.7-static
+326       openmpi   1.6.0-gcc-4.7.0
+268       openmpi   1.8.2-intel-15.0.0-mxm-fca
+140       openmpi   1.6.0-pgi-12.3
+126       openmpi   1.6.2-gcc-4.7.0
+107       openmpi   1.6.5-gcc-4.7-mxm-fca
+98        openmpi   1.6.0-gcc-4.4.6-static
+89        openmpi   1.8.2-gcc-4.8.0-mxm-fca
+49        openmpi   1.8.llintel-14.0.2
+39        openmpi   1.8.1-gcc-4.8.0-mxm-fca
+32        openmpi   1.6.3-intel-12.1-mxm
+27        openmpi   1.6.5-nagfor-4.4.7
+25        openmpi   1.4.5-gcc-4.4.6
+17        openmpi   1.6.2-intel-12.1
+16        openmpi   1.6.5-intel-13.1-mxm-fca
+14        openmpi   1.6.2-pgi-12.9
+14        openmpi   1.8.1-intel-14.0.2-mxm-fca
+11        openmpi   1.6.5-intel-14.1-mxm-fca
+7         openmpi   1.6.2-intel-13.0
+7         openmpi   1.6.4-pgi-12.3-mxm-fca
+3         openmpi   1.6.0-gcc-4.4.6
+3         openmpi   1.6.4-pgi-12.9-mxm-fca
+2         openmpi   1.6.1-intel-12.1
+2         openmpi   1.6.2-pgi-12.3
+2         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+2         openmpi   1.8.2-intel-14.0.2-mxm-fca
+1         openmpi   1.6.1-gcc-4.7.0
+
+###################
+('2014-11-01 00:00:00', '2014-12-01 00:00:00')
+###################
+
+87900     openmpi   1.6.5-intel-14.0.2-mxm-fca
+424       openmpi   1.6.5-gcc-4.4.7-static
+421       openmpi   1.6.0-intel-12.1
+389       openmpi   1.6.0-pgi-12.3
+349       openmpi   1.6.2-gcc-4.7.0
+115       openmpi   1.6.5-gcc-4.7-mxm-fca
+115       openmpi   1.8.2-intel-15.0.0-mxm-fca
+100       openmpi   1.4.5-gcc-4.4.6
+73        openmpi   1.6.0-gcc-4.7.0
+72        openmpi   1.6.0-gcc-4.4.6-static
+56        openmpi   1.6.5-nagfor-4.4.7
+45        openmpi   1.8.1-gcc-4.8.0-mxm-fca
+29        openmpi   1.8.1-intel-14.0.2-mxm-fca
+25        openmpi   1.8.llintel-14.0.2
+14        openmpi   1.6.5-intel-14.1-mxm-fca
+12        openmpi   1.6.0-gcc-4.4.6
+10        openmpi   1.6.2-pgi-12.9
+9         openmpi   1.6.3-intel-12.1-mxm
+4         openmpi   1.6.2-intel-12.1
+4         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+4         openmpi   1.6.5-intel-13.1-mxm-fca
+4         openmpi   1.8.2-intel-14.0.2-mxm-fca
+1         openmpi   1.6.2-intel-13.0.1
+1         openmpi   1.8.2-gcc-4.4.7-mxm-fca
+
+###################
+('2014-10-01 00:00:00', '2014-11-01 00:00:00')
+###################
+
+138709    openmpi   1.6.5-intel-14.0.2-mxm-fca
+664       openmpi   1.6.0-intel-12.1
+590       openmpi   1.6.5-gcc-4.4.7-static
+406       openmpi   1.6.0-pgi-12.3
+228       openmpi   1.6.2-gcc-4.7.0
+173       openmpi   1.6.0-gcc-4.4.6-static
+168       openmpi   1.6.5-gcc-4.7-mxm-fca
+136       openmpi   1.6.0-gcc-4.7.0
+49        openmpi   1.8.llintel-14.0.2
+37        openmpi   1.4.5-gcc-4.4.6
+31        openmpi   1.6.5-nagfor-4.4.7
+22        openmpi   1.6.0-gcc-4.4.6
+15        openmpi   1.6.5-intel-14.1-mxm-fca
+13        openmpi   1.8.2-gcc-4.8.0-mxm-fca
+11        openmpi   1.8.1-gcc-4.8.0-mxm-fca
+7         openmpi   1.8.1-intel-14.0.2-mxm-fca
+6         openmpi   1.6.2-pgi-12.9
+5         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+5         openmpi   1.8.2-intel-15.0.0-mxm-fca
+3         openmpi   1.6.2-intel-12.1
+3         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+3         openmpi   1.6.5-intel-13.1-mxm-fca
+1         openmpi   1.6.2-intel-13.0
+1         openmpi   1.8.2-gcc-4.4.7-mxm-fca
+1         openmpi   1.8.2-intel-14.0.2-mxm-fca
+
+###################
+('2014-09-01 00:00:00', '2014-10-01 00:00:00')
+###################
+
+12632     openmpi   1.6.5-intel-14.0.2-mxm-fca
+138       openmpi   1.6.0-intel-12.1
+129       openmpi   1.6.5-gcc-4.4.7-static
+95        openmpi   1.6.2-gcc-4.7.0
+44        openmpi   1.6.0-gcc-4.7.0
+40        openmpi   1.6.5-gcc-4.7-mxm-fca
+24        openmpi   1.6.0-pgi-12.3
+12        openmpi   1.6.0-gcc-4.4.6-static
+11        openmpi   1.8.1-gcc-4.8.0-mxm-fca
+7         openmpi   1.4.5-gcc-4.4.6
+5         openmpi   1.6.5-intel-14.1-mxm-fca
+4         openmpi   1.6.0-gcc-4.4.6
+3         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+3         openmpi   1.8.2-intel-15.0.0-mxm-fca
+2         openmpi   1.6.2-intel-12.1
+2         openmpi   1.6.5-nagfor-4.4.7
+2         openmpi   1.8.llintel-14.0.2
+1         openmpi   1.6.2-pgi-12.9
+1         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+1         openmpi   1.8.1-intel-14.0.2-mxm-fca
+
+###################
+('2014-08-01 00:00:00', '2014-09-01 00:00:00')
+###################
+
+34687     openmpi   1.6.0-intel-12.1
+384       openmpi   1.6.2-gcc-4.7.0
+326       openmpi   1.4.5-gcc-4.4.6
+206       openmpi   1.8.1-gcc-4.8.0-mxm-fca
+201       openmpi   1.6.0-pgi-12.3
+149       openmpi   1.6.4-intel-12.1-mxm-fca
+144       openmpi   1.6.5-intel-14.1-mxm-fca
+128       openmpi   1.6.0-gcc-4.7.0
+104       openmpi   1.6.5-gcc-4.7-mxm-fca
+101       openmpi   1.6.5-gcc-4.4.7-static
+100       openmpi   1.6.5-intel-13.1-mxm-fca
+28        openmpi   1.6.5-nagfor-4.4.7
+21        openmpi   1.6.0-nag-5.1
+20        openmpi   1.6.0-gcc-4.4.6-static
+20        openmpi   1.8.1-intel-14.0.2-mxm-fca
+16        openmpi   1.6.5-intel-14.0.2-mxm-fca
+8         openmpi   1.6.2-intel-12.1
+7         openmpi   1.6.2-intel-13.0
+7         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+1         openmpi   1.6.2-intel-11.1
+1         openmpi   1.6.2-pgi-12.3
+1         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+1         openmpi   1.6.4-intel-13.0.1-mxm-fca
+
+###################
+('2014-07-01 00:00:00', '2014-08-01 00:00:00')
+###################
+
+44175     openmpi   1.6.0-intel-12.1
+746       openmpi   1.6.2-gcc-4.7.0
+553       openmpi   1.4.5-gcc-4.4.6
+399       openmpi   1.6.4-intel-12.1-mxm-fca
+379       openmpi   1.8.1-gcc-4.8.0-mxm-fca
+349       openmpi   1.6.0-pgi-12.3
+291       openmpi   1.6.5-gcc-4.7-mxm-fca
+198       openmpi   1.6.5-intel-14.1-mxm-fca
+142       openmpi   1.6.5-gcc-4.4.7-static
+141       openmpi   1.6.0-gcc-4.7.0
+86        openmpi   1.8.1-intel-14.0.2-mxm-fca
+72        openmpi   1.6.5-nagfor-4.4.7
+46        openmpi   1.6.4-gcc-4.4.6-mxm-fca
+45        openmpi   1.6.0-gcc-4.4.6-static
+29        openmpi   1.6.5-intel-13.1-mxm-fca
+10        openmpi   1.6.2-intel-12.1
+7         openmpi   1.6.0-gcc-4.4.6
+7         openmpi   1.6.0-nag-5.1
+5         openmpi   1.6.2-pgi-12.9
+2         openmpi   1.6.1-intel-12.1
+2         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+1         openmpi   1.6.1-gcc-4.7.0
+1         openmpi   1.6.4-g94-0.94-mxm-fca
+
+###################
+('2014-06-01 00:00:00', '2014-07-01 00:00:00')
+###################
+
+97231     openmpi   1.6.0-intel-12.1
+2354      openmpi   1.6.0-pgi-12.3
+640       openmpi   1.6.2-gcc-4.7.0
+457       openmpi   1.6.5-gcc-4.7-mxm-fca
+377       openmpi   1.4.5-gcc-4.4.6
+298       openmpi   1.6.4-intel-12.1-mxm-fca
+192       openmpi   1.8.1-gcc-4.8.0-mxm-fca
+136       openmpi   1.6.0-gcc-4.7.0
+132       openmpi   1.6.5-intel-14.1-mxm-fca
+105       openmpi   1.6.0-gcc-4.4.6-static
+43        openmpi   1.6.5-intel-13.1-mxm-fca
+34        openmpi   1.6.0-nag-5.1
+27        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+24        openmpi   1.6.5-gcc-4.4.7-static
+18        openmpi   1.6.5-nagfor-4.4.7
+13        openmpi   1.6.0-gcc-4.4.6
+13        openmpi   1.6.2-intel-12.1
+10        openmpi   1.6.4-gcc-4.4.6-mxm-fca
+2         openmpi   1.6.4-intel-13.0.1-mxm-fca
+2         openmpi   1.8.1-intel-14.0.2-mxm-fca
+1         openmpi   1.6.5-pgi-13.5-mxm-fca
+
+###################
+('2014-05-01 00:00:00', '2014-06-01 00:00:00')
+###################
+
+30145     openmpi   1.6.0-intel-12.1
+1849      openmpi   1.6.0-pgi-12.3
+577       openmpi   1.4.5-gcc-4.4.6
+573       openmpi   1.6.5-gcc-4.7-mxm-fca
+535       openmpi   1.6.2-gcc-4.7.0
+342       openmpi   1.6.4-intel-12.1-mxm-fca
+165       openmpi   1.6.0-gcc-4.4.6-static
+128       openmpi   1.6.5-intel-14.1-mxm-fca
+112       openmpi   1.6.0-gcc-4.7.0
+20        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+20        openmpi   1.6.5-gcc-4.4.7-static
+14        openmpi   1.6.2-intel-12.1
+14        openmpi   1.6.4-gcc-4.4.6-mxm-fca
+12        openmpi   1.6.0-nag-5.1
+9         openmpi   1.6.4-intel-13.0.1-mxm-fca
+7         openmpi   1.6.0-gcc-4.4.6
+3         openmpi   1.6.2-intel-11.1
+2         openmpi   1.8.1-intel-14.0.2-mxm-fca
+1         openmpi   1.6.2-intel-13.0
+1         openmpi   1.6.2-pgi-12.9
+1         openmpi   1.6.3-intel-12.1-mxm
+1         openmpi   1.6.5-intel-13.1-mxm-fca
+
+###################
+('2014-04-01 00:00:00', '2014-05-01 00:00:00')
+###################
+
+64162     openmpi   1.6.0-intel-12.1
+584       openmpi   1.6.2-gcc-4.7.0
+488       openmpi   1.4.5-gcc-4.4.6
+384       openmpi   1.6.0-gcc-4.4.6-static
+379       openmpi   1.6.5-intel-14.1-mxm-fca
+366       openmpi   1.6.4-intel-12.1-mxm-fca
+349       openmpi   1.6.5-gcc-4.7-mxm-fca
+256       openmpi   1.6.0-pgi-12.3
+133       openmpi   1.6.0-gcc-4.7.0
+30        openmpi   1.6.2-intel-12.1
+21        openmpi   1.6.5-intel-13.1-mxm-fca
+19        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+14        openmpi   1.6.5-gcc-4.4.7-static
+6         openmpi   1.6.4-intel-13.0.1-mxm-fca
+2         openmpi   1.6.0-nag-5.1
+2         openmpi   1.6.1-intel-12.1
+2         openmpi   1.6.2-intel-11.1
+2         openmpi   1.6.2-pgi-12.9
+1         openmpi   1.6.0-gcc-4.4.6
+1         openmpi   1.6.1-gcc-4.7.0
+1         openmpi   1.6.2-intel-13.0.1
+1         openmpi   1.6.3-intel-12.1-mxm
+1         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+
+###################
+('2014-03-01 00:00:00', '2014-04-01 00:00:00')
+###################
+
+22493     openmpi   1.6.0-intel-12.1
+1117      openmpi   1.6.0-pgi-12.3
+688       openmpi   1.6.2-gcc-4.7.0
+401       openmpi   1.4.5-gcc-4.4.6
+191       openmpi   1.6.5-intel-14.1-mxm-fca
+187       openmpi   1.6.5-gcc-4.7-mxm-fca
+154       openmpi   1.6.0-gcc-4.7.0
+153       openmpi   1.6.4-intel-12.1-mxm-fca
+145       openmpi   1.6.0-gcc-4.4.6-static
+64        openmpi   1.6.4-intel-13.0.1-mxm-fca
+18        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+14        openmpi   1.6.5-intel-13.1-mxm-fca
+13        openmpi   1.6.2-intel-12.1
+12        openmpi   1.6.0-gcc-4.4.6
+4         openmpi   1.4.3-gcc-4.5.1
+4         openmpi   1.6.0-nag-5.1
+3         openmpi   1.6.0-intel-11.1
+3         openmpi   1.6.5-gcc-4.4.7-static
+2         openmpi   1.6.2-intel-13.0
+1         openmpi   1.6.0-pgi-10.5
+1         openmpi   1.6.1-gcc-4.4.6
+1         openmpi   1.6.1-gcc-4.7.0
+1         openmpi   1.6.1-intel-12.1
+1         openmpi   1.6.2-gcc-4.4.6
+1         openmpi   1.6.2-intel-11.1
+1         openmpi   1.6.2-intel-13.0.1
+1         openmpi   1.6.2-nag-5.1
+1         openmpi   1.6.2-nag-5.2
+1         openmpi   1.6.2-pgi-10.5
+1         openmpi   1.6.2-pgi-12.3
+1         openmpi   1.6.2-pgi-12.9
+1         openmpi   1.6.3-intel-12.1-mxm
+1         openmpi   1.6.4-g94-0.94-mxm-fca
+1         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+1         openmpi   1.6.4-pgi-12.3-mxm-fca
+1         openmpi   1.6.4-pgi-12.9-mxm-fca
+1         openmpi   1.6.5-pgi-13.5-mxm-fca
+
+###################
+('2014-02-01 00:00:00', '2014-03-01 00:00:00')
+###################
+
+70573     openmpi   1.6.0-intel-12.1
+517       openmpi   1.6.2-gcc-4.7.0
+488       openmpi   1.4.5-gcc-4.4.6
+455       openmpi   1.6.0-pgi-12.3
+330       openmpi   1.6.0-gcc-4.4.6-static
+254       openmpi   1.6.0-gcc-4.7.0
+212       openmpi   1.6.4-intel-12.1-mxm-fca
+84        openmpi   1.6.2-intel-12.1
+64        openmpi   1.6.4-intel-13.0.1-mxm-fca
+30        openmpi   1.6.5-gcc-4.7-mxm-fca
+17        openmpi   1.6.2-pgi-12.9
+10        openmpi   1.6.2-intel-11.1
+10        openmpi   1.6.5-intel-14.1-mxm-fca
+7         openmpi   1.6.0-gcc-4.4.6
+3         openmpi   1.6.0-nag-5.1
+3         openmpi   1.6.5-intel-13.1-mxm-fca
+1         openmpi   1.6.4-g94-0.94-mxm-fca
+1         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+
+###################
+('2014-01-01 00:00:00', '2014-02-01 00:00:00')
+###################
+
+41929     openmpi   1.6.0-intel-12.1
+719       openmpi   1.6.2-gcc-4.7.0
+632       openmpi   1.6.0-pgi-12.3
+353       openmpi   1.4.5-gcc-4.4.6
+183       openmpi   1.6.4-intel-12.1-mxm-fca
+136       openmpi   1.6.0-gcc-4.7.0
+136       openmpi   1.6.4-intel-13.0.1-mxm-fca
+109       openmpi   1.6.0-gcc-4.4.6-static
+70        openmpi   1.6.2-intel-12.1
+24        openmpi   1.6.0-nag-5.1
+19        openmpi   1.6.5-intel-13.1-mxm-fca
+5         openmpi   1.6.0-gcc-4.4.6
+4         openmpi   1.6.2-pgi-12.9
+4         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+3         openmpi   1.6.2-intel-11.1
+3         openmpi   1.6.5-gcc-4.7-mxm-fca
+2         openmpi   1.6.4-pgi-12.3-mxm-fca
+2         openmpi   1.6.5-intel-14.1-mxm-fca
+1         openmpi   1.6.1-gcc-4.4.6
+1         openmpi   1.6.1-gcc-4.7.0
+
+###################
+('2013-12-01 00:00:00', '2014-01-01 00:00:00')
+###################
+
+8835      openmpi   1.6.0-intel-12.1
+1172      openmpi   1.6.0-pgi-12.3
+278       openmpi   1.6.2-gcc-4.7.0
+277       openmpi   1.4.5-gcc-4.4.6
+196       openmpi   1.6.4-intel-12.1-mxm-fca
+141       openmpi   1.6.4-intel-13.0.1-mxm-fca
+121       openmpi   1.6.0-gcc-4.7.0
+112       openmpi   1.6.0-gcc-4.4.6-static
+110       openmpi   1.6.0-nag-5.1
+56        openmpi   1.6.2-intel-12.1
+6         openmpi   1.6.5-intel-13.1-mxm-fca
+4         openmpi   1.6.4-gcc-4.7.0-mxm-fca
+3         openmpi   1.6.1-gcc-4.7.0
+2         openmpi   1.6.2-pgi-12.9
+1         openmpi   1.6.2-intel-13.0.1
+
+###################
+('2013-11-01 00:00:00', '2013-12-01 00:00:00')
+###################
+
+11488     openmpi   1.6.0-intel-12.1
+1752      openmpi   1.6.0-pgi-12.3
+482       openmpi   1.6.2-gcc-4.7.0
+326       openmpi   1.4.5-gcc-4.4.6
+222       openmpi   1.6.0-gcc-4.7.0
+130       openmpi   1.6.0-gcc-4.4.6-static
+121       openmpi   1.6.4-intel-13.0.1-mxm-fca
+35        openmpi   1.6.2-intel-12.1
+30        openmpi   1.6.4-intel-12.1-mxm-fca
+26        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+9         openmpi   1.6.0-gcc-4.4.6
+7         openmpi   1.6.0-nag-5.1
+1         openmpi   1.6.2-pgi-12.3
+1         openmpi   1.6.3-intel-12.1-mxm
+
+###################
+('2013-10-01 00:00:00', '2013-11-01 00:00:00')
+###################
+
+10740     openmpi   1.6.0-intel-12.1
+969       openmpi   1.6.0-pgi-12.3
+272       openmpi   1.4.5-gcc-4.4.6
+198       openmpi   1.6.0-gcc-4.7.0
+143       openmpi   1.6.2-gcc-4.7.0
+124       openmpi   1.6.0-gcc-4.4.6-static
+87        openmpi   1.6.4-intel-13.0.1-mxm-fca
+21        openmpi   1.6.0-nag-5.1
+21        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+14        openmpi   1.6.4-intel-12.1-mxm-fca
+10        openmpi   1.6.0-gcc-4.4.6
+3         openmpi   1.6.2-intel-12.1
+2         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+1         openmpi   1.6.2-intel-13.0
+
+###################
+('2013-09-01 00:00:00', '2013-10-01 00:00:00')
+###################
+
+78824     openmpi   1.6.0-intel-12.1
+369       openmpi   1.6.0-pgi-12.3
+270       openmpi   1.6.2-gcc-4.7.0
+261       openmpi   1.4.5-gcc-4.4.6
+88        openmpi   1.6.0-gcc-4.7.0
+48        openmpi   1.6.4-intel-13.0.1-mxm-fca
+45        openmpi   1.6.0-gcc-4.4.6-static
+32        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+20        openmpi   1.6.4-intel-12.1-mxm-fca
+12        openmpi   1.6.0-nag-5.1
+5         openmpi   1.6.0-gcc-4.4.6
+2         openmpi   1.6.2-intel-13.0
+1         openmpi   1.6.2-pgi-12.9
+
+###################
+('2013-08-01 00:00:00', '2013-09-01 00:00:00')
+###################
+
+13732     openmpi   1.6.0-intel-12.1
+447       openmpi   1.6.0-pgi-12.3
+213       openmpi   1.6.0-gcc-4.4.6-static
+182       openmpi   1.4.5-gcc-4.4.6
+147       openmpi   1.6.2-gcc-4.7.0
+115       openmpi   1.6.0-gcc-4.7.0
+43        openmpi   1.6.4-intel-13.0.1-mxm-fca
+35        openmpi   1.6.0-gcc-4.4.6
+29        openmpi   1.6.4-intel-12.1-mxm-fca
+26        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+8         openmpi   1.6.0-nag-5.1
+8         openmpi   1.6.2-pgi-12.9
+3         openmpi   1.6.2-intel-13.0
+2         openmpi   1.6.1-gcc-4.7.0
+2         openmpi   1.6.2-intel-12.1
+2         openmpi   1.6.3-intel-12.1-mxm
+1         openmpi   1.6.0-intel-11.1
+1         openmpi   1.6.0-pgi-10.5
+1         openmpi   1.6.1-gcc-4.4.6
+1         openmpi   1.6.1-intel-12.1
+1         openmpi   1.6.2-gcc-4.4.6
+1         openmpi   1.6.2-intel-11.1
+1         openmpi   1.6.2-intel-13.0.1
+1         openmpi   1.6.2-nag-5.1
+1         openmpi   1.6.2-nag-5.2
+1         openmpi   1.6.2-pgi-10.5
+1         openmpi   1.6.2-pgi-12.3
+1         openmpi   1.6.4-g94-0.94-mxm-fca
+1         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+1         openmpi   1.6.4-pgi-12.3-mxm-fca
+1         openmpi   1.6.4-pgi-12.9-mxm-fca
+
+###################
+('2013-07-01 00:00:00', '2013-08-01 00:00:00')
+###################
+
+80413     openmpi   1.6.0-intel-12.1
+680       openmpi   1.6.0-pgi-12.3
+329       openmpi   1.4.5-gcc-4.4.6
+236       openmpi   1.6.2-gcc-4.7.0
+57        openmpi   1.6.0-gcc-4.7.0
+46        openmpi   1.6.2-gcc-4.4.6
+28        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+24        openmpi   1.6.4-intel-13.0.1-mxm-fca
+17        openmpi   1.6.2-intel-11.1
+16        openmpi   1.6.2-intel-12.1
+14        openmpi   1.6.0-gcc-4.4.6
+14        openmpi   1.6.2-intel-13.0
+14        openmpi   1.6.2-nag-5.1
+13        openmpi   1.6.2-nag-5.2
+11        openmpi   1.6.2-pgi-10.5
+11        openmpi   1.6.2-pgi-12.3
+10        openmpi   1.6.4-intel-12.1-mxm-fca
+9         openmpi   1.6.0-nag-5.1
+6         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+3         openmpi   1.6.3-intel-12.1-mxm
+2         openmpi   1.6.0-gcc-4.4.6-static
+2         openmpi   1.6.0-intel-11.1
+2         openmpi   1.6.0-pgi-10.5
+2         openmpi   1.6.1-gcc-4.4.6
+2         openmpi   1.6.1-gcc-4.7.0
+2         openmpi   1.6.2-pgi-12.9
+2         openmpi   1.6.4-pgi-12.3-mxm-fca
+1         openmpi   1.6.1-intel-12.1
+1         openmpi   1.6.2-intel-13.0.1
+1         openmpi   1.6.4-g94-0.94-mxm-fca
+1         openmpi   1.6.4-pgi-12.9-mxm-fca
+
+###################
+('2013-06-01 00:00:00', '2013-07-01 00:00:00')
+###################
+
+107127    openmpi   1.6.0-intel-12.1
+1630      openmpi   1.6.0-pgi-12.3
+334       openmpi   1.4.5-gcc-4.4.6
+255       openmpi   1.6.2-gcc-4.7.0
+197       openmpi   1.6.0-gcc-4.7.0
+166       openmpi   1.6.0-nag-5.1
+26        openmpi   1.6.3-intel-12.1-mxm
+12        openmpi   1.6.4-gcc-4.7.0-mxm-fca
+11        openmpi   1.6.4-intel-12.1-mxm-fca
+7         openmpi   1.6.0-gcc-4.4.6
+4         openmpi   1.6.2-intel-11.1
+2         openmpi   1.6.2-intel-12.1
+2         openmpi   1.6.4-gcc-4.4.6-mxm-fca
+1         openmpi   1.6.1-gcc-4.7.0
+1         openmpi   1.6.2-intel-13.0
+1         openmpi   1.6.2-pgi-12.3
+1         openmpi   1.6.4-intel-13.0.1-mxm-fca
+
+###################
+('2013-05-01 00:00:00', '2013-06-01 00:00:00')
+###################
+
+
+###################
+('2013-04-01 00:00:00', '2013-05-01 00:00:00')
+###################
+
+
+###################
+('2013-03-01 00:00:00', '2013-04-01 00:00:00')
+###################
+
+
+###################
+('2013-02-01 00:00:00', '2013-03-01 00:00:00')
+###################
+
+
+###################
+('2013-01-01 00:00:00', '2013-02-01 00:00:00')
+###################
+
+
+###################
+('2012-12-01 00:00:00', '2013-01-01 00:00:00')
+###################
+
+
+###################
+('2012-11-01 00:00:00', '2012-12-01 00:00:00')
+###################
+
+
+###################
+('2012-10-01 00:00:00', '2012-11-01 00:00:00')
+###################
+
+
+###################
+('2012-09-01 00:00:00', '2012-10-01 00:00:00')
+###################
+
+
+###################
+('2012-08-01 00:00:00', '2012-09-01 00:00:00')
+###################
+
+
+###################
+('2012-07-01 00:00:00', '2012-08-01 00:00:00')
+###################
+
+
+###################
+('2012-06-01 00:00:00', '2012-07-01 00:00:00')
+###################
+
+
+###################
+('2012-05-01 00:00:00', '2012-06-01 00:00:00')
+###################
+
+
+###################
+('2012-04-01 00:00:00', '2012-05-01 00:00:00')
+###################
+
+
+###################
+('2012-03-01 00:00:00', '2012-04-01 00:00:00')
+###################
+
+
+###################
+('2012-02-01 00:00:00', '2012-03-01 00:00:00')
+###################
+
+
+###################
+('2012-01-01 00:00:00', '2012-02-01 00:00:00')
+###################
+
