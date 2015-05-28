@@ -1,4 +1,5 @@
-dbFiles/app.db
+db/app.db
+db/app.db2
 *.swp
 *.pyc
 test/
