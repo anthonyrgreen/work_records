@@ -2,6 +2,9 @@ from records import app, request
 from flask import render_template
 from modelController import addModuleLogFile, getLogs
 from datetime import datetime, date
+from werkzeug.contrib.profiler import ProfilerMiddleware
+from flask.ext.sqlalchemy import get_debug_queries
+
 
 @app.route('/submitmodulelogs', methods=["GET","POST"])
 def submitModuleLogs():
@@ -43,9 +46,18 @@ def viewModuleLogs():
   timeInterval = request.args.get('dateAggregation')
   
   # Pass off to models
-  logs = getLogs(startTime, endTime, timeInterval, aggregationOptions)
+  logs = getLogs(startTime, endTime, timeInterval, aggregationOptions, 'DESC', 'total')
 
   return render_template("viewModuleLogs.html",
     withLogs = True,
     logs = logs)
+
+@app.after_request
+def after_request(response):
+    for query in get_debug_queries():
+        if query.duration >= 0.5:
+            app.logger. \
+                warning("SLOW QUERY: %s\nParameters: %s\nDuration: %fs\nContext: %s\n" \
+                % (query.statement, query.parameters, query.duration, query.context))
+    return response
 

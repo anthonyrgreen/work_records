@@ -19,7 +19,7 @@
   <input type="radio" name="dateAggregation" value="timespan"> whole timespan
   <p>
   <input type="checkbox" name="outputRequest" value="user"/> User <br>
-  <input type="checkbox" name="outputRequest" value="package"/> Package <br>
+  <input type="checkbox" name="outputRequest" value="module"/> Module <br>
   <input type="checkbox" name="outputRequest" value="version" disabled/> Version <br>
   <p>
   <p><input type="Submit"/>
@@ -30,11 +30,14 @@
   <ul>
     {% for log in logs %}
     <li>{{log[0]}}
-      <ul>
+      <table>
         {% for entry in log[1] %}
-        <li>{{entry}}</li>
+        <tr>
+          <td>{{entry[0]}}</td>
+          <td>{{entry[1]}}</td>
+        </tr>
         {% endfor %}
-      </ul>
+      </table>
     </li>
     {% endfor %}
   </ul>
