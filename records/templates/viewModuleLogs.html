@@ -33,8 +33,9 @@
       <table>
         {% for entry in log[1] %}
         <tr>
-          <td>{{entry[0]}}</td>
-          <td>{{entry[1]}}</td>
+          {% for prop in entry %}
+          <td>{{prop}}</td>
+          {% endfor %}
         </tr>
         {% endfor %}
       </table>

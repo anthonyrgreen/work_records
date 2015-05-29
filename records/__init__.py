@@ -1,13 +1,14 @@
 from flask import Flask, request, jsonify, render_template
 from jinja2 import Environment, PackageLoader
 from flask.ext.sqlalchemy import SQLAlchemy
+from records.models import db
 import logging
 
 # App setup
 app = Flask(__name__)
 app.config.from_object('config')
 # Database setup
-db = SQLAlchemy(app)
+db.init_app(app)
 # Templating setup
 env = Environment(loader=PackageLoader('records', 'templates'))
 
@@ -20,6 +21,4 @@ app.logger.addHandler(file_handler)
 app.logger.info('microblog startup')
 
 
-from records import models
-from records import modelController, modelScripts
 from records import views

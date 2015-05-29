@@ -1,4 +1,4 @@
-from models import db
+from records.models import db
 from datetime import datetime
 
 ### THIS HOLDS ONLY TABLE SCHEMA. ALL QUERYING AND MAINTENANCE FUNCITONALITY
