@@ -8,6 +8,7 @@ import re
 from datetime import datetime, timedelta
 from records import app
 from records.models.query import getLogsByTimespan
+from dbConnect import dbFunction
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--sort_by", '-s', choices=['module', 'count', 'user'],
@@ -59,13 +60,25 @@ else:
   print("Please give an end date in a valid format.")
   exit(1)
 
+# This doesn't work for some reason
+#@dbFunction
+#def query(startDate, endDate, period, moduleFilter, sortBy, sortOrder):
+#  with app.app_context():
+#    return getLogsByTimespan(startDate, endDate, 
+#                           timeInterval=period,
+#                           filters={ 'module' : moduleFilter },
+#                           sortBy=sortBy,
+#                           sortOrder=sortOrder)
+#results = query(startDate, endDate, args.period, args.module_filter, args.sort_by, args.sort_order)
+
 with app.app_context():
   results = getLogsByTimespan(startDate, endDate, 
                               timeInterval=args.period,
                               filters={ 'module' : args.module_filter },
                               sortBy=args.sort_by,
                               sortOrder=args.sort_order)
-#results = getModuleLogsByMonth(startDate, endDate, args.ordering, args.sort_by)
+
+print(len(results))
 
 for time, result in reversed(results):
   print("")
