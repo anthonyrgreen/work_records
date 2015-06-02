@@ -1,7 +1,7 @@
 from records import app, request
 from flask import render_template
 from models.maintenance import addModuleLogFile
-from models.query import getLogsByTimespan
+from models.query import getLogs
 from datetime import datetime, date
 from werkzeug.contrib.profiler import ProfilerMiddleware
 from flask.ext.sqlalchemy import get_debug_queries
@@ -47,11 +47,11 @@ def viewModuleLogs():
   timeInterval = request.args.get('dateAggregation')
   
   # Pass off to models
-  logs = getLogsByTimespan(startTime, endTime, 
-                           timeInterval=timeInterval,
-                           aggregation=aggregationOptions, 
-                           sortBy='count',
-                           sortOrder='DESC')
+  logs = getLogs(startTime, endTime, 
+                 timeInterval=timeInterval,
+                 aggregation=aggregationOptions, 
+                 sortBy='count',
+                 sortOrder='desc')
 
   return render_template("viewModuleLogs.html",
     withLogs = True,
