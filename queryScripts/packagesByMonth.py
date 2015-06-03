@@ -10,6 +10,7 @@ from calendar import month_abbr
 from records import app
 from records.models.query import getLogs
 from dbConnect import dbFunction
+from printResults import printResults
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--sort_by", '-s', choices=['module', 'count', 'user'],
@@ -68,63 +69,7 @@ with app.app_context():
                             sortBy=args.sort_by,
                             sortOrder=args.sort_order)
 
-### FORMATTING DATA
 dateTabWidth = 7
-contentTabWidth = 25
-
-timespanFlag = 'timespan' in labels
-if timespanFlag:
-  del(labels[0])
-
-for i in range(len(labels)):
-  if labels[i] not in ['year', 'month', 'day']:
-    contentIdx = i
-    break
-try:
-  monthIdx = labels.index('month')
-except:
-  monthIdx = None
-
-### PRINT THE TOP HEADER
-print("PACKAGES FOR PERIOD " + args.begin_date + " - " + args.end_date + ":")
-if not timespanFlag:
-  labelStr = "".join([str(l).ljust(dateTabWidth) for l in labels[:contentIdx]])
-else:
-  labelStr = ""
-labelStr += "".join([str(l).ljust(contentTabWidth) for l in labels[contentIdx:]])
-print(labelStr)
-print("="*len(labelStr))
-listDelta = [None] * len(labels)
-
-### PRINT THE REST
-for result in results:
-  result = list(result)
-  # Convert the month number to an abbreviation
-  if monthIdx:
-    result[monthIdx] = month_abbr[result[monthIdx]]
-  # Find the smallest index at which the previous result differs from the current one
-  # This is so that we don't have a column with "2014 2014 2014 2014 2014...." Thus,
-  # we only print columns when their values change
-  for i in range(len(labels)):
-    if listDelta[i] != result[i]:
-      changeIdx = i
-      break
-  listDelta = list(result)
-  # Format answer:
-  printString = ""
-  # Date whitespace
-  if not timespanFlag:
-    printString += "".join(["".ljust(dateTabWidth) 
-                           for i in range(min(contentIdx, changeIdx))])
-  # Content whitespace
-  printString += "".join(["".ljust(contentTabWidth)
-                          for i in range(min(contentIdx, changeIdx), changeIdx)])
-  # Date info
-  if not timespanFlag:
-    printString += "".join([str(r).ljust(dateTabWidth)
-                            for r in result[changeIdx:contentIdx]])
-  # Content info
-  printString += "".join([str(r).ljust(contentTabWidth)
-                          for r in result[contentIdx:]])
-  # Print the record
-  print(printString)
+dataTabWidth = 25
+print("PACKAGES FOR PERIOD: " + args.begin_date + " - " + args.end_date)
+printResults(labels, results, dateTabWidth, dataTabWidth)

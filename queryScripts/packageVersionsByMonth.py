@@ -7,7 +7,8 @@ import argparse
 import re
 from datetime import datetime, timedelta
 from records import app
-from records.models.query import getLogsByTimespan
+from records.models.query import getLogs
+from printResults import printResults
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--module', '-m', required=True,
@@ -19,7 +20,7 @@ parser.add_argument('--end_date', '-e', required=True,
 parser.add_argument("--sort_by", '-s', choices=['count', 'version'],
                     default='version',
                     help='sort records by which attribute? (DEFAULT: version)')
-parser.add_argument('--sort_order', '-o', choices=['ASC', 'DESC'],
+parser.add_argument('--sort_order', '-o', choices=['asc', 'desc'],
                     default='DESC',
                     help='order results by ascending or descending?')
 parser.add_argument('--period', '-p', choices=['day', 'month', 'year', 'timespan'],
@@ -59,19 +60,14 @@ else:
 
 
 with app.app_context():
-  results = getLogsByTimespan(startDate, endDate,
-                              timeInterval=args.period,
-                              aggregation=['module', 'version'],
-                              filters={ 'module' : [args.module] },
-                              sortBy=args.sort_by,
-                              sortOrder=args.sort_order)
-#results = getModuleVersionLogsByMonth(startDate, endDate, args.module, args.ordering)
+  labels, results = getLogs(startDate, endDate,
+                            timeAggregation=args.period,
+                            dataAggregation=['module', 'version'],
+                            filters={ 'module' : [args.module] },
+                            sortBy=args.sort_by,
+                            sortOrder=args.sort_order)
 
-for time, result in reversed(results):
-  print("")
-  print("###################")
-  print(time)
-  print("###################")
-  print("")
-  for res in result:
-    print("".join([str(r).ljust(10) for r in res]))
+dateTabWidth = 7
+dataTabWidth = 25
+print("PACKAGE VERSIONS FOR PACKAGE: " + args.module + "\nOVER PERIOD: " + args.begin_date + " - " + args.end_date)
+printResults(labels, results, dateTabWidth, dataTabWidth)
