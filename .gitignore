@@ -2,4 +2,7 @@
 *app.db*
 *.swp
 *.pyc
+*microblog.log
+*.DS_Store
+flask/
 test/
