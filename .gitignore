@@ -4,5 +4,7 @@
 *.pyc
 *microblog.log
 *.DS_Store
-flask/
+env/
+logs/
 test/
+db/dbFiles/

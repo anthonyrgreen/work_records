@@ -1,9 +1,9 @@
-#!../flask/bin/python
-from sys import argv, path
+#!../env/bin/python
+from sys import path
 path.insert(0,'..')
+from os import path
 from records import app
 import subprocess
-from os import path
 
 def dbMaintenance(func):
   def contextFunction(*args, **kwargs):

@@ -1,11 +1,9 @@
-#!../flask/bin/python
+#!../../env/bin/python
 from sys import argv, path
 path.insert(0,'..')
-#from records import app
+path.insert(0,'../..')
 from appContext import dbMaintenance
 from records.models.maintenance import addModuleLogDirectory
-
-#with app.app_context():
 
 @dbMaintenance
 def addDirs():
