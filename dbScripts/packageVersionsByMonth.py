@@ -6,32 +6,29 @@ path.insert(0,'..')
 import argparse
 import re
 from datetime import datetime, timedelta
-from calendar import month_abbr
 from records import app
 from records.models.query import getLogs
-from dbConnect import dbFunction
 from printResults import printResults
+from appContext import dbQuery
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--sort_by", '-s', choices=['module', 'count', 'user'],
-                    default='count',
-                    help='sort records by which attribute? (DEFAULT: count)')
-parser.add_argument('--sort_order', '-o', choices=['asc', 'desc'],
-                    default='desc',
-                    help='order records by ascending or descending? (DEFAULT: DESC)')
-parser.add_argument('--module_filter', '-f', nargs='+',
-                    default=[],
-                    help='enter the space-separated names of modules you would like to see (DEFAULT: no filter')
+parser.add_argument('--module', '-m', required=True,
+                    help='Which module would you like records for?')
 parser.add_argument('--begin_date', '-b', required=True,
                     help="[DD-]MM-YYYY at which to begin the query")
 parser.add_argument('--end_date', '-e', required=True,
-                    help="[DD-]MM-YYYY at which to end the query (inclusive)")
+                    help="[DD-]MM-YYYY at which to end the query")
+parser.add_argument("--sort_by", '-s', choices=['count', 'version'],
+                    default='version',
+                    help='sort records by which attribute? (DEFAULT: version)')
+parser.add_argument('--sort_order', '-o', choices=['asc', 'desc'],
+                    default='DESC',
+                    help='order results by ascending or descending?')
 parser.add_argument('--period', '-p', choices=['day', 'month', 'year', 'timespan'],
                     default='month',
                     help='over what period should the query be divided? (DEFAULT: month)')
 
 args = parser.parse_args()
-
 # CHECK INPUT
 ###
 # Dates
@@ -62,14 +59,19 @@ else:
   print("Please give an end date in a valid format.")
   exit(1)
 
-with app.app_context():
-  labels, results = getLogs(startDate, endDate, 
+@dbQuery
+def query():
+  labels, results = getLogs(startDate, endDate,
                             timeAggregation=args.period,
-                            filters={ 'module' : args.module_filter },
+                            dataAggregation=['module', 'version'],
+                            filters={ 'module' : [args.module] },
                             sortBy=args.sort_by,
                             sortOrder=args.sort_order)
+  return (labels, results)
+
+labels, results = query()
 
 dateTabWidth = 7
 dataTabWidth = 25
-print("PACKAGES FOR PERIOD: " + args.begin_date + " - " + args.end_date)
+print("PACKAGE VERSIONS FOR PACKAGE: " + args.module + "\nOVER PERIOD: " + args.begin_date + " - " + args.end_date)
 printResults(labels, results, dateTabWidth, dataTabWidth)

@@ -1,5 +1,5 @@
-db/app.db
-db/app.db2
+*app.db
+*app.db*
 *.swp
 *.pyc
 test/
