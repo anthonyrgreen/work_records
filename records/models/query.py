@@ -74,7 +74,7 @@ def getLogs(startTime, endTime,
   timeFilters = [ModuleLoadRecord.loadDate >= startTime, 
                  ModuleLoadRecord.loadDate < endTime]
   dataFilters = []
-  countFilters = []
+  countFilters = [sqlalchemy.sql.true()]
   # We go through each key in filters, ORing the filters for every individual key
   for key in filters:
     if key in ['greaterThan', 'lessThan']:
@@ -82,7 +82,7 @@ def getLogs(startTime, endTime,
         criterion = 'count > ' + str(int(filters[key]))
       else:
         criterion = 'count < ' + str(int(filters[key]))
-      countFilters.append(criterion)
+      countFilters = [criterion]
     else:
       # This is a place-holder that we need to begin building up the query.
       # It won't wreck our query since it's going to be OR'd with extra criteria
