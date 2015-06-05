@@ -16,7 +16,7 @@ def span(pred, xs):
 def split(idx, xs):
   return (xs[:idx], xs[idx:])
 
-def printResults(labels, results, dateTabWidth, dataTabWidth):
+def printResults(labels, results, dateTabWidth, dataTabWidth, consistentColumns=False, noHeaders=False):
   dateNames = ['timespan', 'year', 'month', 'day']
   dateColumns, dataColumns = span(lambda x: x in dateNames, labels)
   if 'timespan' in dateColumns:
@@ -41,11 +41,14 @@ def printResults(labels, results, dateTabWidth, dataTabWidth):
     result = list(result)
     if monthIdx:
       result[monthIdx] = month_abbr[result[monthIdx]]
-    for i in range(len(result)):
-      if delta[i] != result[i]:
-        deltaIdx = i
-        break
-    delta = result
+    if not consistentColumns:
+      for i in range(len(result)):
+        if delta[i] != result[i]:
+          deltaIdx = i
+          break
+      delta = result
+    else:
+      deltaIdx = 0
     # Whitespace
     resultStr += "".join(["".ljust(dateTabWidth) 
                           for i in range(dateIdx, min(deltaIdx, dataIdx))])
@@ -57,5 +60,6 @@ def printResults(labels, results, dateTabWidth, dataTabWidth):
     resultStr += "".join([str(r).ljust(dataTabWidth)
                           for r in result[max(deltaIdx, dataIdx):]])
     resultStr += "\n"
-  print(labelStr)
+  if not noHeaders:
+    print(labelStr)
   print(resultStr)

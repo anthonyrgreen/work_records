@@ -7,4 +7,4 @@
 env/
 logs/
 test/
-db/dbFiles/
+db/dbFiles/*.db*
