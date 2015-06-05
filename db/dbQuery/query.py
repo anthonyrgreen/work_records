@@ -165,6 +165,19 @@ consistent information."""
 This option turns that off, for ease of text processing."""
   parser.add_argument('--no_headers', '-nh', action='store_true', default=False,
                       help=noHeadersStr)
+  tabSeparatorsStr = \
+"""This flag separates columns by a single tab"""
+  parser.add_argument('--tab_separators', '-ts', action='store_true', default=False,
+                      help=tabSeparatorsStr)
+
+  scriptOutputStr = \
+"""This is a convenience option which turns on the options:
+--consistent_columns
+--no_headers
+--tab_separators"""
+  parser.add_argument('--script_output', '-so', action='store_true', default=False,
+                      help=scriptOutputStr)
+
   return parser
 
 
@@ -185,8 +198,9 @@ filters = parseFilters(args.module_filter,
                        args.version_filter, 
                        args.user_filter,
                        args.count_filter)
-consistentColumns = args.consistent_columns
-noHeaders = args.no_headers
+consistentColumns = args.consistent_columns | args.script_output
+noHeaders = args.no_headers | args.script_output
+tabSeparators = args.tab_separators | args.script_output
 
 @dbQuery
 def query():
@@ -206,6 +220,7 @@ if not noHeaders:
   print("PACKAGES FOR PERIOD: " + args.begin_date + " - " + args.end_date)
 printResults(labels, results, dateTabWidth, dataTabWidth, 
              consistentColumns=consistentColumns,
-             noHeaders=noHeaders)
+             noHeaders=noHeaders,
+             tabSeparators=tabSeparators)
 
 
