@@ -2,8 +2,8 @@
 ### READ-ONLY.
 
 from __future__ import print_function
-from records.models import db
-from records.models.schema import ModuleLoadRecord, User, Module, LogFile
+from records.src.appContext import cliQuery, dbMaintenance
+from records.src.schema import ModuleLoadRecord, LogFile
 from datetime import datetime, timedelta
 from collections import OrderedDict
 from sqlalchemy import func, asc, desc
@@ -92,14 +92,15 @@ def getLogs(startTime, endTime,
       # Deal with the edge case that a filter list was empty
       if criterion != sqlalchemy.sql.false():
         dataFilters.append(criterion)
-    
+
   # Now, the actual querying
-  results = db.session.query(*(timeColumns + dataColumns + countColumn)) \
-          .filter(*(timeFilters + dataFilters)) \
-          .group_by(*(timeColumns + dataColumns)) \
-          .order_by(*sortByColumn) \
-          .having(*countFilters) \
-          .all()
+  with cliQuery() as session:
+    results = session.query(*(timeColumns + dataColumns + countColumn)) \
+            .filter(*(timeFilters + dataFilters)) \
+            .group_by(*(timeColumns + dataColumns)) \
+            .order_by(*sortByColumn) \
+            .having(*countFilters) \
+            .all()
   return (timeAggregation + dataAggregation + ['count'], results)
 
 def cleanDataAggregation(dataAggregation):
@@ -151,14 +152,9 @@ def cleanSortOrder(sortOrder):
     sortOrder = 'desc'
   return sortOrder
 
-def userExists(username):
-  return db.session.query(sqlalchemy.sql.exists().where(User.username == username)).scalar()
-
-def moduleExists(moduleName):
-  return db.session.query(sqlalchemy.sql.exists().where(Module.moduleName == moduleName)).scalar()
-
 def moduleLogAlreadyAdded(filename):
-  return db.session.query(sqlalchemy.sql.exists().where(LogFile.filename == filename)).scalar()
+  with dbMaintenance() as session:
+    return session.query(sqlalchemy.sql.exists().where(LogFile.filename == filename)).scalar()
 
 def toLoadDate(dateString, timestamp):
   dateFormat = "%b-%d-%Y %H:%M:%S"

@@ -1,16 +1,11 @@
-#!../../env/bin/python
+#!/usr/bin/env python
 from __future__ import print_function
-from sys import path
-path.insert(0,'..')
-path.insert(0,'../..')
-
 import argparse
 import re
 from datetime import datetime, timedelta
 from calendar import month_abbr
-from records.models.query import getLogs
-from appContext import dbQuery
-from printResults import printResults
+from records.src.query import getLogs
+from records.src.printResults import printResults
 
 ###############################################################################
 ###############################################################################
@@ -202,7 +197,6 @@ consistentColumns = args.consistent_columns | args.script_output
 noHeaders = args.no_headers | args.script_output
 tabSeparators = args.tab_separators | args.script_output
 
-@dbQuery
 def query():
   labels, results = getLogs(startDate, endDate, 
                             dataAggregation=aggregation,

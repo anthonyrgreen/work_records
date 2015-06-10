@@ -2,9 +2,7 @@
 *app.db*
 *.swp
 *.pyc
-*microblog.log
 *.DS_Store
 env/
 logs/
 test/
-db/dbFiles/*.db*

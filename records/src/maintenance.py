@@ -2,9 +2,10 @@
 # we implement here. This includes adding and deleting records.
 
 from __future__ import print_function
-from records.models import db
-from records.models.schema import ModuleLoadRecord, User, Module, LogFile
-from records.models.query import userExists, moduleExists, moduleLogAlreadyAdded
+from records.src import engine
+from records.src.schema import ModuleLoadRecord, LogFile
+from records.src.query import moduleLogAlreadyAdded
+from records.src.appContext import dbMaintenance
 from datetime import datetime, timedelta
 from sqlalchemy import func
 from sqlalchemy.sql import exists
@@ -27,32 +28,21 @@ def addModuleLogFile(f):
       module = logLine[4]
       version = logLine[5]
 
-      #moduleLoadRecord = ModuleLoadRecord(loadDate, module, version, user, filename)
-      #db.session.add(moduleLoadRecord) # TODO IMPORTANT!!!! REMOVE WHEN BELOW CHECK HAS BEEN ESTABLISHED!
       records.append({ 'loadDate' : loadDate
                      , 'module'   : module
                      , 'version'  : version
                      , 'user'     : user
                      , 'filename' : filename })
 
-      #if userExists(user) and moduleExists(module):
-      #  db.session.add(moduleLoadRecord)
-      #
-      #else:
-      #  print("Did not add moduleLoadRecord to database.", file=stderr)
-      #  if not userExists(user):
-      #    print("User " + user + " does not exist", file=stderr)
-      #  if not moduleExists(module):
-      #    print("module " + module + " does not exist", file=stderr)
-
     # bulk add using expression language for efficiency
-    db.engine.connect().execute(ModuleLoadRecord.__table__.insert(), records)
-    
-    logFile = LogFile(filename)
-    db.session.add(logFile)
+    with dbMaintenance() as session:
+      engine.connect().execute(ModuleLoadRecord.__table__.insert(), records)
+      logFile = LogFile(filename)
+      session.add(logFile)
+      session.commit()
 
-    db.session.commit()
     return len(records)
+
   else:
     print("Did not add " + filename + ": it already exists.", file=stderr)
     return len(records)
@@ -63,29 +53,18 @@ def deleteModuleLogFile(f):
 
     # Note that these records are still available in for querying until the
     # end of the function, when the session is committed
-    db.session.query(ModuleLoadRecord) \
-              .filter(ModuleLoadRecord.filename == filename) \
-              .delete(synchronize_session=False)
-    db.session.query(LogFile) \
-              .filter(LogFile.filename == filename) \
-              .delete(synchronize_session=False)
+    with dbMaintenance() as session:
+      session.query(ModuleLoadRecord) \
+             .filter(ModuleLoadRecord.filename == filename) \
+             .delete(synchronize_session=False)
+      session.query(LogFile) \
+             .filter(LogFile.filename == filename) \
+             .delete(synchronize_session=False)
 
-    db.session.commit()
+      session.commit()
     return
   else:
     return
-
-def addUser(username):
-  if not userExists(username):
-    user = User(username)
-    db.session.add(user)
-    db.session.commit()
-
-def addModule(moduleName):
-  if not moduleExists(moduleName):
-    module = Module(moduleName)
-    db.session.add(module)
-    db.session.commit()
 
 def toLoadDate(dateString, timestamp):
   dateFormat = "%b-%d-%Y %H:%M:%S"
@@ -101,9 +80,12 @@ logFilePattern = re.compile("^flux_module_log-.*\.gz$")
 def addModuleLogDirectory(dirName):
   # Non-recursively add all module_logs in a directory to our database, checking
   # first to ensure they have not already been added.
-  filenames = [n for n in listdir(dirName) if isfile(join(dirName, n))]
-  acceptedFilenames = [n for n in filenames if logFilePattern.match(n) is not None]
-  rejectedFilenames = [n for n in filenames if logFilePattern.match(n) is None] ### DEBUG
+  filenames = [n for n in listdir(dirName)
+               if isfile(join(dirName, n))]
+  acceptedFilenames = [n for n in filenames
+                       if logFilePattern.match(n) is not None]
+  rejectedFilenames = [n for n in filenames
+                       if logFilePattern.match(n) is None] ### DEBUG
   successfullyAddedFilenames = []
   alreadyAddedFilenames = [] ### DEBUG
   numAddedRecords = 0
