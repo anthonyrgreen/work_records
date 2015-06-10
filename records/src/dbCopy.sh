@@ -5,8 +5,8 @@ test -d "$destinationDir" || mkdir -p "$destinationDir"
 filename="app.db"
 fullpath=$destinationDir$filename
 if [[ app.db -nt $fullpath ]]; then
-  echo "COPYING"
+#  echo "COPYING"
   cp app.db "$fullpath"
-else
-  echo "NOT COPYING"
+#else
+#  echo "NOT COPYING"
 fi
