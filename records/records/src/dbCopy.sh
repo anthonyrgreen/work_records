@@ -1,4 +1,4 @@
-destinationDir="/tmp/argreen/tempDB/"
+destinationDir="/tmp/$USER/module-query/tempDB/"
 cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cd ../db
 test -d "$destinationDir" || mkdir -p "$destinationDir" 
