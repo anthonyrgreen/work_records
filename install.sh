@@ -46,4 +46,6 @@ chmod +x ./deleteDirLogs
 chmod +x ./createDatabase
 chmod +x ./query
 
-mv ./addDirLogs ./createDatabase ./deleteDirLogs ./query "$INSTALLDIR"
+if [ $# -ne 0 ] ; then
+    mv ./addDirLogs ./createDatabase ./deleteDirLogs ./query "$INSTALLDIR"
+fi
