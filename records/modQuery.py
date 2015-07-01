@@ -1,19 +1,23 @@
 #!/usr/bin/env python
-from query import queryCommand
-from addLogs import addLogsCommand
-from deleteLogs import deleteLogsCommand
+from query import createQueryParser
+from addLogs import createAddLogsParser
+from deleteLogs import createDeleteLogsParser
+from argparse import ArgumentParser
 
-import argparse
-
+examplesStr = \
+"""mainParser examplesStr
+TODO"""
 mainParser = ArgumentParser(description="Store and query module load records.",
-                            epilog=examplesStr,
-                            formatter_class=RawTextHelpFormatter)
-subParser = mainParser.add_subparsers(help="This program has three available commands:")
+  epilog=examplesStr)
+subParser = mainParser.add_subparsers(help="This program can be run in one of three modes")
+
 ### QUERY PARSER ###
-queryParser = subParser.add_parser("query", help=)
-
+queryParser = createQueryParser(subParser)
 ### ADDLOGS PARSER ###
-addLogsParser = subParser.add_parser("addLogs", help=)
+addLogsParser = createAddLogsParser(subParser)
 ### DELETELOGS PARSER ###
-deleteLogsParser = subParser.add_parser("deleteLogs", help=)
+deleteLogsParser = createDeleteLogsParser(subParser)
 
+### RUN THAT BUSINESS
+args = mainParser.parse_args()
+args.func(args)
