@@ -29,7 +29,8 @@ get_script_dir () {
      DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
      echo "$DIR"
 }
-cd $( get_script_dir )
+SCRIPT_DIR=$( get_script_dir )
+cd "$SCRIPT_DIR"
 module load python/2.7.5
 virtualenv env
 env/bin/pip install sqlalchemy
@@ -37,15 +38,17 @@ env/bin/pip install sqlalchemy-utils
 env/bin/pip install argparse
 
 
-ln -s ./addDirLogs.sh ./addDirLogs
-ln -s ./createDatabase.sh ./createDatabase
-ln -s ./deleteDirLogs.sh ./deleteDirLogs
-ln -s ./query.sh ./query
+if [ $# -ne 0 ] ; then
+    cd "$INSTALLDIR"
+fi
+
+ln -s $SCRIPT_DIR/addDirLogs.sh ./addDirLogs
+ln -s $SCRIPT_DIR/createDatabase.sh ./createDatabase
+ln -s $SCRIPT_DIR/deleteDirLogs.sh ./deleteDirLogs
+ln -s $SCRIPT_DIR/query.sh ./query
 chmod +x ./addDirLogs
 chmod +x ./deleteDirLogs
 chmod +x ./createDatabase
 chmod +x ./query
 
-if [ $# -ne 0 ] ; then
-    mv ./addDirLogs ./createDatabase ./deleteDirLogs ./query "$INSTALLDIR"
-fi
+#mv ./addDirLogs ./createDatabase ./deleteDirLogs ./query "$INSTALLDIR"
