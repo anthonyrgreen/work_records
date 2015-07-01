@@ -14,5 +14,6 @@ get_script_dir () {
 }
 cd $( get_script_dir )
 
+module load python/2.7.5
 source env/bin/activate
 ./records/createDatabase.py "$@"
