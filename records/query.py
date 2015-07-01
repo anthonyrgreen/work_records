@@ -70,9 +70,9 @@ user    (u)\n"""
   exampleStr = \
 """Examples:
 -- all records between Jan 1, 2014, and Feb 15, 2014, by day, aggregated by module, version, for modules 'R' or 'openmpi', by user 'grundoon':
-./query.py -b 01/02/2014 -e 15/02/2014 -p day -a m v -fm R openmpi -fu grundoon
+./query -b 01/02/2014 -e 15/02/2014 -p day -a m v -fm R openmpi -fu grundoon
 -- all records between Feb and Apr 2015, by month, aggregated by module and user, sorted by module, displaying only records with count less than 50:
-./query.py -b 02/2015 -e 04/2015 -p month -a m u -s m -fc lt 50"""
+./query -b 02/2015 -e 04/2015 -p month -a m u -s m -fc lt 50"""
   parser = argparse.ArgumentParser(description=descriptionStr,
                                    epilog=exampleStr,
                                    formatter_class=argparse.RawTextHelpFormatter)

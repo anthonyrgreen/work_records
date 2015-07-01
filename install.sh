@@ -36,6 +36,7 @@ virtualenv env
 env/bin/pip install sqlalchemy
 env/bin/pip install sqlalchemy-utils
 env/bin/pip install argparse
+bash ./createDatabase.sh
 
 
 if [ $# -ne 0 ] ; then
@@ -43,12 +44,10 @@ if [ $# -ne 0 ] ; then
 fi
 
 ln -s $SCRIPT_DIR/addDirLogs.sh ./addDirLogs
-ln -s $SCRIPT_DIR/createDatabase.sh ./createDatabase
+#ln -s $SCRIPT_DIR/createDatabase.sh ./createDatabase
 ln -s $SCRIPT_DIR/deleteDirLogs.sh ./deleteDirLogs
 ln -s $SCRIPT_DIR/query.sh ./query
 chmod +x ./addDirLogs
 chmod +x ./deleteDirLogs
-chmod +x ./createDatabase
+#chmod +x ./createDatabase
 chmod +x ./query
-
-#mv ./addDirLogs ./createDatabase ./deleteDirLogs ./query "$INSTALLDIR"
