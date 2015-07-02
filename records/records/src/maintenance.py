@@ -16,56 +16,6 @@ import pwd
 import re
 import gzip
 
-def addModuleLogFile(f):
-  filename = basename(f.name)
-  records = []
- 
-  if not moduleLogAlreadyAdded(filename):
-    for line in f:
-      logLine = line.split()
-      loadDate = toLoadDate(logLine[0], logLine[1])
-      user = logLine[3]
-      module = logLine[4]
-      version = logLine[5]
-
-      records.append({ 'loadDate' : loadDate
-                     , 'module'   : module
-                     , 'version'  : version
-                     , 'user'     : user
-                     , 'filename' : filename })
-
-    # bulk add using expression language for efficiency
-    with dbMaintenance() as session:
-      engine.connect().execute(ModuleLoadRecord.__table__.insert(), records)
-      logFile = LogFile(filename)
-      session.add(logFile)
-      session.commit()
-
-    return len(records)
-
-  else:
-    print("Did not add " + filename + ": it already exists.", file=stderr)
-    return len(records)
-
-def deleteModuleLogFile(f):
-  filename = basename(f.name)
-  if moduleLogAlreadyAdded(filename):
-
-    # Note that these records are still available in for querying until the
-    # end of the function, when the session is committed
-    with dbMaintenance() as session:
-      session.query(ModuleLoadRecord) \
-             .filter(ModuleLoadRecord.filename == filename) \
-             .delete(synchronize_session=False)
-      session.query(LogFile) \
-             .filter(LogFile.filename == filename) \
-             .delete(synchronize_session=False)
-
-      session.commit()
-    return
-  else:
-    return
-
 def toLoadDate(dateString, timestamp):
   dateFormat = "%b-%d-%Y %H:%M:%S"
   dateString = dateString + " " + timestamp
@@ -77,60 +27,63 @@ def toLoadDate(dateString, timestamp):
 
 logFilePattern = re.compile("^flux_module_log-.*\.gz$")
 
-def addModuleLogDirectory(dirName):
-  # Non-recursively add all module_logs in a directory to our database, checking
-  # first to ensure they have not already been added.
-  filenames = [n for n in listdir(dirName)
-               if isfile(join(dirName, n))]
-  acceptedFilenames = [n for n in filenames
-                       if logFilePattern.match(n) is not None]
-  rejectedFilenames = [n for n in filenames
-                       if logFilePattern.match(n) is None] ### DEBUG
-  successfullyAddedFilenames = []
-  alreadyAddedFilenames = [] ### DEBUG
+def addModuleLogFile(filename):
   numAddedRecords = 0
+  if not logFilePattern.match(filename):
+    return (numAddedRecords, "Could not add " + filename + \
+           " to logs. Reason: unexpected filename pattern."
 
-  for filename in acceptedFilenames:
-    if not moduleLogAlreadyAdded(filename):
-      with gzip.open(join(dirName, filename), 'r') as f:
-        numAddedRecords = numAddedRecords + addModuleLogFile(f)
-      successfullyAddedFilenames.append(filename)
-    else:
-      alreadyAddedFilenames.append(filename) ### DEBUG
+  if moduleLogAlreadyAdded(filename):
+    return (numAddedRecords, "Could not add " + filename + \
+           " to logs. Reason: already added.")
 
-  ### DEBUG
-  for moduleLog in successfullyAddedFilenames:
-    print("added '" + moduleLog + "' to moduleLog database.", file=stderr)
-  for moduleLog in alreadyAddedFilenames:
-    print("WARNING: skipping log '" + moduleLog + "'. Reason: already added.", file=stderr)
-  for moduleLog in rejectedFilenames:
-    print("WARNING: skipping log '" + moduleLog + "'. Reason: unexpected filename pattern.", file=stderr)
-  print("Successfully added " + str(numAddedRecords) + " records.")
-      
-def deleteModuleLogDirectory(dirName):
-  # Non-recursively delete all module_logs in a directory from our database,
-  # checking first to ensure they have not already been added.
-  filenames = [n for n in listdir(dirName) if isfile(join(dirName, n))]
-  acceptedFilenames = [n for n in filenames if logFilePattern.match(n) is not None]
-  rejectedFilenames = [n for n in filenames if logFilePattern.match(n) is None] ### DEBUG
-  nonexistentFilenames = [] ### DEBUG
-  deletedFilenames = [] ### DEBUG
+  else:
+    try:
+      with gzip.open(join(dirname, filename), 'r') as f:
+        records = []
+        for line in f:
+          logLine = line.split()
+          loadDate = toLoadDate(logLine[0], logLine[1])
+          user = logLine[3]
+          module = logLine[4]
+          version = logLine[5]
+          records.append({ 'loadDate' : loadDate
+                         , 'module'   : module
+                         , 'version'  : version
+                         , 'user'     : user
+                         , 'filename' : filename })
+          numAddedRecords++
 
-  for filename in acceptedFilenames:
-    if moduleLogAlreadyAdded(filename):
-      with gzip.open(join(dirName, filename), 'r') as f:
-        deleteModuleLogFile(f)
-      deletedFilenames.append(filename) ### DEBUG
-    else:
-      nonexistentFilenames.append(filename) ### DEBUG
+        # bulk add using expression language for efficiency
+        with dbMaintenance() as session:
+          engine.connect().execute(ModuleLoadRecord.__table__.insert(), records)
+          logFile = LogFile(filename)
+          session.add(logFile)
+          session.commit()
+        return (numAddedRecords, "Successfully added " + filename + ": " + \
+               str(numAddedRecords) + " records added.")
+    except:
+      return (numAddedRecords, "Could not add " + filename + \
+             " to logs. Reason: could not open file.")
 
-  ### DEBUG
-  for moduleLog in deletedFilenames:
-    print("deleted " + moduleLog + " from moduleLog database.", file=stderr)
-  for moduleLog in rejectedFilenames:
-    print("WARNING: skipping log " + moduleLog + ". Reason: unexpected filename.", file=stderr)
-  for moduleLog in nonexistentFilenames:
-    print("WARNING: skipping log " + moduleLog + ". Reason: not in database.", file=stderr)
+def deleteModuleLogFile(filename):
+  numDeletedRecords = 0 # TODO: figure out how to update in real case
+  if moduleLogAlreadyAdded(filename):
+    # Note that these records are still available in for querying until the
+    # end of the function, when the session is committed
+    with dbMaintenance() as session:
+      session.query(ModuleLoadRecord) \
+             .filter(ModuleLoadRecord.filename == filename) \
+             .delete(synchronize_session=False)
+      session.query(LogFile) \
+             .filter(LogFile.filename == filename) \
+             .delete(synchronize_session=False)
+      session.commit()
+    return (numDeletedRecords, "Successfully deleted " + numDeletedRecords + \
+           " records from log " + filename)
+  else:
+    return (numDeletedRecords, "Removed no files from log " + filename ": " + \
+           "Reason: log not found in database.")
 
 def updateUserList():
   # Inspect the /etc/passwd file and ensure that we have all users listed in
