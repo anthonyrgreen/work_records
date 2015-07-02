@@ -15,6 +15,7 @@ from sys import stderr
 import pwd
 import re
 import gzip
+import ntpath
 
 def toLoadDate(dateString, timestamp):
   dateFormat = "%b-%d-%Y %H:%M:%S"
@@ -25,20 +26,24 @@ def toLoadDate(dateString, timestamp):
 def logFileErrorMsg(filename, reason):
   return "Could not add " + filename + " to logs. Reason: " + reason
 
+def stripFilename(filename):
+  head, tail = ntpath.split(filename)
+  return tail or ntpath.basename(head)
+
 def addModuleLogFile(filename):
   numAddedRecords = 0
   logFilePattern = re.compile("^flux_module_log-.*\.gz$")
-  if not logFilePattern.match(filename):
+  filenameStripped = stripFilename(filename)
+  if not logFilePattern.match(filenameStripped):
     return (numAddedRecords,
             logFileErrorMsg(filename, "unexpected filename pattern"))
 
   if moduleLogAlreadyAdded(filename):
-    return (numAddedRecords, 
-            logFileErrorMsg(filename, "already added.")
-
+    return (numAddedRecords,
+            logFileErrorMsg(filename, "already added."))
   else:
     try:
-      with gzip.open(join(dirname, filename), 'r') as f:
+      with gzip.open(filename, 'r') as f:
         records = []
         for line in f:
           logLine = line.split()
@@ -51,7 +56,7 @@ def addModuleLogFile(filename):
                          , 'version'  : version
                          , 'user'     : user
                          , 'filename' : filename })
-          numAddedRecords++
+          numAddedRecords += 1
 
         # bulk add using expression language for efficiency
         with dbMaintenance() as session:
@@ -81,7 +86,7 @@ def deleteModuleLogFile(filename):
     return (numDeletedRecords, "Successfully deleted " + numDeletedRecords + \
            " records from log " + filename)
   else:
-    return (numDeletedRecords, "Removed no files from log " + filename ": " + \
+    return (numDeletedRecords, "Removed no files from log " + filename + ": " + \
            "Reason: log not found in database.")
 
 def updateUserList():

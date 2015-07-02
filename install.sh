@@ -31,7 +31,7 @@ get_script_dir () {
 }
 SCRIPT_DIR=$( get_script_dir )
 cd "$SCRIPT_DIR"
-module load python/2.7.5
+#module load python/2.7.5
 virtualenv env
 env/bin/pip install sqlalchemy
 env/bin/pip install sqlalchemy-utils
@@ -43,11 +43,5 @@ if [ $# -ne 0 ] ; then
     cd "$INSTALLDIR"
 fi
 
-ln -s $SCRIPT_DIR/addDirLogs.sh ./addDirLogs
-#ln -s $SCRIPT_DIR/createDatabase.sh ./createDatabase
-ln -s $SCRIPT_DIR/deleteDirLogs.sh ./deleteDirLogs
-ln -s $SCRIPT_DIR/query.sh ./query
-chmod +x ./addDirLogs
-chmod +x ./deleteDirLogs
-#chmod +x ./createDatabase
-chmod +x ./query
+ln -s "$SCRIPT_DIR/module-query.sh" ./module-query
+chmod +x ./module-query
