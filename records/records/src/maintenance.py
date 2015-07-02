@@ -26,15 +26,15 @@ def toLoadDate(dateString, timestamp):
 def logFileErrorMsg(filename, reason):
   return "Could not add " + filename + " to logs. Reason: " + reason
 
-def stripFilename(filename):
-  head, tail = ntpath.split(filename)
+def stripFilepath(filepath):
+  head, tail = ntpath.split(filepath)
   return tail or ntpath.basename(head)
 
-def addModuleLogFile(filename):
+def addModuleLogFile(filepath):
   numAddedRecords = 0
   logFilePattern = re.compile("^flux_module_log-.*\.gz$")
-  filenameStripped = stripFilename(filename)
-  if not logFilePattern.match(filenameStripped):
+  filename = stripFilepath(filepath)
+  if not logFilePattern.match(filename):
     return (numAddedRecords,
             logFileErrorMsg(filename, "unexpected filename pattern"))
 
@@ -43,7 +43,7 @@ def addModuleLogFile(filename):
             logFileErrorMsg(filename, "already added."))
   else:
     try:
-      with gzip.open(filename, 'r') as f:
+      with gzip.open(filepath, 'r') as f:
         records = []
         for line in f:
           logLine = line.split()
@@ -68,10 +68,11 @@ def addModuleLogFile(filename):
                str(numAddedRecords) + " records added.")
     except:
       return (numAddedRecords,
-              logFileErrorMsg(filename, "could not open file"))
+              logFileErrorMsg(filepath, "could not open file"))
 
-def deleteModuleLogFile(filename):
+def deleteModuleLogFile(filepath):
   numDeletedRecords = 0 # TODO: figure out how to update in real case
+  filename = stripFilepath(filepath)
   if moduleLogAlreadyAdded(filename):
     # Note that these records are still available in for querying until the
     # end of the function, when the session is committed
@@ -83,8 +84,8 @@ def deleteModuleLogFile(filename):
              .filter(LogFile.filename == filename) \
              .delete(synchronize_session=False)
       session.commit()
-    return (numDeletedRecords, "Successfully deleted " + numDeletedRecords + \
-           " records from log " + filename)
+    return (numDeletedRecords, "Successfully deleted " + str(numDeletedRecords) \
+           + " records from log " + filename)
   else:
     return (numDeletedRecords, "Removed no files from log " + filename + ": " + \
            "Reason: log not found in database.")
