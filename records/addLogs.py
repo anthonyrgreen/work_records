@@ -2,10 +2,14 @@ from records.src.maintenance import addModuleLogFile
 from argparse import RawTextHelpFormatter
 
 def execAddLogs(args):
+  recordsAdded = 0
   for filename in args.files:
-    output = addModuleLogFile(filename)
-    if verbose:
+    numAdded, output = addModuleLogFile(filename)
+    recordsAdded += numAdded
+    if args.verbose:
       print output
+  if args.verbose:
+    print "Successfully added " + str(recordsAdded) + " records."
 
 def createAddLogsParser(subParser):
   descriptionStr = \

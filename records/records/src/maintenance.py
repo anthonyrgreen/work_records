@@ -21,21 +21,20 @@ def toLoadDate(dateString, timestamp):
   dateString = dateString + " " + timestamp
   return datetime.strptime(dateString, dateFormat)
 
-### 
-### Now the code for interfacing with directories
-###
 
-logFilePattern = re.compile("^flux_module_log-.*\.gz$")
+def logFileErrorMsg(filename, reason):
+  return "Could not add " + filename + " to logs. Reason: " + reason
 
 def addModuleLogFile(filename):
   numAddedRecords = 0
+  logFilePattern = re.compile("^flux_module_log-.*\.gz$")
   if not logFilePattern.match(filename):
-    return (numAddedRecords, "Could not add " + filename + \
-           " to logs. Reason: unexpected filename pattern."
+    return (numAddedRecords,
+            logFileErrorMsg(filename, "unexpected filename pattern"))
 
   if moduleLogAlreadyAdded(filename):
-    return (numAddedRecords, "Could not add " + filename + \
-           " to logs. Reason: already added.")
+    return (numAddedRecords, 
+            logFileErrorMsg(filename, "already added.")
 
   else:
     try:
@@ -63,8 +62,8 @@ def addModuleLogFile(filename):
         return (numAddedRecords, "Successfully added " + filename + ": " + \
                str(numAddedRecords) + " records added.")
     except:
-      return (numAddedRecords, "Could not add " + filename + \
-             " to logs. Reason: could not open file.")
+      return (numAddedRecords,
+              logFileErrorMsg(filename, "could not open file"))
 
 def deleteModuleLogFile(filename):
   numDeletedRecords = 0 # TODO: figure out how to update in real case
