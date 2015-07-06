@@ -1,9 +1,7 @@
-records
-=======
+#records
 This is a program designed to store and query module load records for the flux cluster. 
 
-install
--------
+##install
 Install is quite simple. Just clone and then run the `install.sh` file in the root directory. 
 
 `install.sh` creates a symlink for the utility provided: `module-query`
@@ -14,12 +12,10 @@ You can, optionally, give `install.sh` a single argument, which will specify whe
 
 The install script would then place the symlinks inside the `../bin` directory.
 
-use
----
+##use
 Running `./module-query -h` will give a fairly thorough description of the query utility. Nonetheless, here are some example commands:
 
-`module-query query`
---------------------
+####`module-query query`
 
 * query all records between Jan 1, 2014, and Feb 15, 2014, by day, aggregated by module, version, for modules `R` or `openmpi`, by user `grundoon`:
 
@@ -42,8 +38,7 @@ Running `./module-query -h` will give a fairly thorough description of the query
     
         [grundoon] $ ./module-query query -h
 
-`module-query add-logs`
------------------------
+####`module-query add-logs`
 * Add a single module log:
 
         [grundoon] $ ./module-query add-logs ./logs/flux_module_log-2014-02.gz
@@ -56,8 +51,7 @@ Running `./module-query -h` will give a fairly thorough description of the query
     
         [grundoon] $ ./module-query add-logs -h
 
-`module-query delete-logs`
---------------------------
+####`module-query delete-logs`
 * Delete a single module log:
 
         [grundoon] $ ./module-query delete-logs ./logs/flux_module_log-2014-02.gz
