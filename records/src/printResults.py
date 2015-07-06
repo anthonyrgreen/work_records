@@ -15,7 +15,8 @@ def span(pred, xs):
 def split(idx, xs):
   return (xs[:idx], xs[idx:])
 
-def printResults(labels, results, dateTabWidth, dataTabWidth, consistentColumns=False, noHeaders=False, tabSeparators=False):
+def printResults(labels, results, dateTabWidth, dataTabWidth,
+                 consistentColumns=False, noHeaders=False, tabSeparators=False):
   dateNames = ['timespan', 'year', 'month', 'day']
   dateColumns, dataColumns = span(lambda x: x in dateNames, labels)
   if 'timespan' in dateColumns:
@@ -24,7 +25,7 @@ def printResults(labels, results, dateTabWidth, dataTabWidth, consistentColumns=
     monthIdx = dateColumns.index('month')
   else:
     monthIdx = None
-  
+
   ### CONSTRUCT THE LABEL
   dateIdx = 0
   dataIdx = len(dateColumns)
@@ -35,7 +36,7 @@ def printResults(labels, results, dateTabWidth, dataTabWidth, consistentColumns=
   else:
     labelStr = "\t".join(map(str, dateColumns + dataColumns))
     labelStr += "\n" + "="*len(labelStr)
-    
+
   ### FORMAT THE DATA
   resultStr = ""
   dateDelta = [None] * len(dateColumns)

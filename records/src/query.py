@@ -2,8 +2,8 @@
 ### READ-ONLY.
 
 from __future__ import print_function
-from records.src.appContext import cliQuery, dbMaintenance
-from records.src.schema import ModuleLoadRecord, LogFile
+from src.appContext import cliQuery, dbMaintenance
+from src.schema import ModuleLoadRecord, LogFile
 from datetime import datetime, timedelta
 from collections import OrderedDict
 from sqlalchemy import func, asc, desc

@@ -15,6 +15,6 @@ get_script_dir () {
 }
 cd $( get_script_dir )
 
-#module load python/2.7.5
+module load python/2.7.5
 source env/bin/activate
-./records/modQuery.py "$@"
+python ./records/app.py "$@"

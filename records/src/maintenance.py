@@ -2,10 +2,10 @@
 # we implement here. This includes adding and deleting records.
 
 from __future__ import print_function
-from records.src import engine
-from records.src.schema import ModuleLoadRecord, LogFile
-from records.src.query import moduleLogAlreadyAdded
-from records.src.appContext import dbMaintenance
+from src import engine
+from src.schema import ModuleLoadRecord, LogFile
+from src.query import moduleLogAlreadyAdded
+from src.appContext import dbMaintenance
 from datetime import datetime, timedelta
 from sqlalchemy import func
 from sqlalchemy.sql import exists
@@ -131,7 +131,7 @@ def updateModuleList():
         addedModules.append(moduleName) ### DEBUG
       else:
         rejectedModules.append(moduleName) ### DEBUG
-  
+
   ### DEBUG
   for moduleName in addedModules:
     print("added module: " + moduleName + " to module database.", file=stderr)

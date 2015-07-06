@@ -2,8 +2,8 @@ from __future__ import print_function
 import re
 from datetime import datetime, timedelta
 from calendar import month_abbr
-from records.src.query import getLogs
-from records.src.printResults import printResults
+from src.query import getLogs
+from src.printResults import printResults
 from argparse import RawTextHelpFormatter
 
 ###############################################################################
@@ -119,10 +119,10 @@ user    (u)\n"""
 """Examples:
 -- all records between Jan 1, 2014, and Feb 15, 2014, by day, aggregated by
    module, version, for modules 'R' or 'openmpi', by user 'grundoon':
-$ ./query -b 01/02/2014 -e 15/02/2014 -p day -a m v -fm R openmpi -fu grundoon
+$ ./module-query query -b 01/02/2014 -e 15/02/2014 -p day -a m v -fm R openmpi -fu grundoon
 -- all records between Feb and Apr 2015, by month, aggregated by module and
    user, sorted by module, displaying only records with count less than 50:
-$ ./query -b 02/2015 -e 04/2015 -p month -a m u -s m -fc lt 50"""
+$ ./module-query query -b 02/2015 -e 04/2015 -p month -a m u -s m -fc lt 50"""
   periodStr = \
 """Into what periods should the query be divided?
 Choices: 'timespan', 'year', 'month', 'day'.

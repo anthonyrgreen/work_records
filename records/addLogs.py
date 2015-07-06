@@ -1,4 +1,4 @@
-from records.src.maintenance import addModuleLogFile
+from src.maintenance import addModuleLogFile
 from argparse import RawTextHelpFormatter
 
 def execAddLogs(args):
@@ -13,19 +13,23 @@ def execAddLogs(args):
 
 def createAddLogsParser(subParser):
   descriptionStr = \
-"""createAddLogsParser descriptionStr
-TODO"""
+"""Add one or more cumulative logs to the database. Log filenames must
+be in the form "^flux_module_log-.*\.gz$". Logs whose filenames 
+do not match that regular expression, or which have already been 
+added, will be skipped."""
   exampleStr = \
-"""createAddLogsParser exampleStr
-TODO"""
+"""Examples:
+-- Add a single module log:
+$ ./module-query add-logs ./logs/flux_module_log-2014-02.gz
+-- Add an entire folder of module logs (those already added and those
+   with improper filenames will be skipped)
+$ ./module-query add-logs ./logs/*"""
   verboseStr = \
-"""createAddLogsParser verboseStr
-TODO"""
+"""Turn on this flag to be informed as logs are added / skipped."""
   filesStr = \
-"""createAddLogsParser filesStr
-TODO"""
+"""These are the filenames of those logs to be added."""
 
-  addLogsParser = subParser.add_parser("addLogs",
+  addLogsParser = subParser.add_parser("add-logs",
     description=descriptionStr, epilog=exampleStr,
     formatter_class=RawTextHelpFormatter)
   addLogsParser.add_argument("--verbose", "-v",

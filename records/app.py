@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from query import createQueryParser
 from addLogs import createAddLogsParser
 from deleteLogs import createDeleteLogsParser

@@ -1,4 +1,4 @@
-from records.src import Base
+from src import Base
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime
 
@@ -15,14 +15,14 @@ class ModuleLoadRecord(Base):
   user      = Column(String, index=True)
   filename  = Column(String) # the log from which this was pulled
                              # (in case of malformed input)
-  
+
   def __init__(self, loadDate, module, version, user, filename):
     self.loadDate   = loadDate
     self.module     = module
     self.version    = version
     self.user       = user
     self.filename   = filename
-    
+
   def __repr__(self):
     return '%s %s %s %s %s' % (self.module,
                                self.version,
@@ -34,7 +34,7 @@ class LogFile(Base):
   __tablename__ = 'logfiles'
   id        = Column(Integer, primary_key=True)
   filename  = Column(String, unique=True)
-  
+
   def __init__(self, filename):
     self.filename = filename
 

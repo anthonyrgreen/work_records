@@ -31,13 +31,13 @@ get_script_dir () {
 }
 SCRIPT_DIR=$( get_script_dir )
 cd "$SCRIPT_DIR"
-#module load python/2.7.5
+module load python/2.7.5
 virtualenv env
 env/bin/pip install sqlalchemy
 env/bin/pip install sqlalchemy-utils
 env/bin/pip install argparse
-bash ./createDatabase.sh
-
+source env/bin/activate
+python ./records/createDatabase.py
 
 if [ $# -ne 0 ] ; then
     cd "$INSTALLDIR"

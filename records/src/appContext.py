@@ -1,5 +1,5 @@
 from os import path, environ
-from records.src import Session, engine
+from src import Session, engine
 from sqlalchemy import create_engine
 from contextlib import contextmanager
 import subprocess
