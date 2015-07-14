@@ -74,6 +74,7 @@ def execQuery(args):
   period = args.period
   sortBy = parseSortBy(args.sort_by)
   sortOrder = args.period
+  count = args.count
   aggregation = parseAggregation(args.aggregation)
   consistentColumns = args.consistent_columns | args.script_output
   noHeaders = args.no_headers | args.script_output
@@ -84,16 +85,15 @@ def execQuery(args):
                          args.count_filter)
 
   labels, results = getLogs(startDate, endDate, 
+                            count = args.count,
                             dataAggregation=aggregation,
                             timeAggregation=period,
                             filters=filters,
                             sortBy=sortBy,
                             sortOrder=sortOrder)
-  dateTabWidth = 7
-  dataTabWidth = 30
   if not noHeaders:
     print("PACKAGES FOR PERIOD: " + args.begin_date + " - " + args.end_date)
-  printResults(labels, results, dateTabWidth, dataTabWidth, 
+  printResults(labels, results,
                consistentColumns=consistentColumns,
                noHeaders=noHeaders,
                tabSeparators=tabSeparators)
@@ -118,15 +118,34 @@ user    (u)\n"""
   exampleStr = \
 """Examples:
 -- all records between Jan 1, 2014, and Feb 15, 2014, by day, aggregated by
-   module, version, for modules 'R' or 'openmpi', by user 'grundoon':
+   module, version, for modules 'R' or 'openmpi', by user 'grundoon', counted
+   by number of loads:
 $ ./module-query query -b 01/02/2014 -e 15/02/2014 -p day -a m v -fm R openmpi -fu grundoon
 -- all records between Feb and Apr 2015, by month, aggregated by module and
-   user, sorted by module, displaying only records with count less than 50:
-$ ./module-query query -b 02/2015 -e 04/2015 -p month -a m u -s m -fc lt 50"""
+   user, sorted by module, displaying only records with load counts less 
+   than 50:
+$ ./module-query query -b 02/2015 -e 04/2015 -p month -a m u -s m -fc lt 50
+-- all records between Feb and Apr 2015, by month, aggregated and sorted by
+   module, displaying only records with unique user count less than 50:
+$ ./module-query query -b 02/2015 -e 04/2015 -p month -a m -s m -c numUsers -fc lt 50
+-- List all unique users of R for the months of February and March, 2015,
+   without any count attached:
+$ ./module-query query -b 02/2015 -e 03/2015 -a m u -c none -fm R"""
   periodStr = \
 """Into what periods should the query be divided?
 Choices: 'timespan', 'year', 'month', 'day'.
 Default: month"""
+  countStr = \
+"""What should the count column be counting?
+Choices: 'none', 'numLoads', 'numUsers'.
+Default: 'numLoads'.
+'numLoads' simply gives the total number of times a given record was loaded
+by the specified aggregate collection (IE --aggregate m v --count numLoads
+gives how many times each module/version combo was loaded)
+'numUsers' gives the number of unique users who have loaded an instance of
+the specified aggregate collection (IE --aggregate m --count numUsers
+gives the unique users per module)
+'none' omits the count column."""
   aggregationStr = \
 """Properties along which data should be aggregated.
 Choices: module (m), version (v), user (u).
@@ -180,6 +199,8 @@ This option turns that off, for ease of text processing."""
     required=True, help="[DD/]MM/YYYY at which to end the query (inclusive)")
   queryParser.add_argument('--period', '-p',
     choices=['day', 'month', 'year', 'timespan'], default='month', help=periodStr)
+  queryParser.add_argument('--count', '-c',
+    choices=['none', 'numLoads', 'numUsers'], default='numLoads', help=countStr)
   queryParser.add_argument("--aggregation", "-a", 
     choices=['m', 'v', 'u'], default=['m'], nargs='+', help=aggregationStr)
   queryParser.add_argument("--sort_by", '-s',

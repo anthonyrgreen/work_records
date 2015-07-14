@@ -1,4 +1,6 @@
 from query import createQueryParser
+from queryMonthlyUserCounts import createMonthlyUserCountsParser
+from queryMonthlyUserLists import createMonthlyUserListsParser
 from addLogs import createAddLogsParser
 from deleteLogs import createDeleteLogsParser
 from argparse import ArgumentParser
@@ -16,7 +18,12 @@ queryParser = createQueryParser(subParser)
 addLogsParser = createAddLogsParser(subParser)
 ### DELETELOGS PARSER ###
 deleteLogsParser = createDeleteLogsParser(subParser)
+### MONTHLYUSERCOUNTS PARSER ###
+monthlyUserCountsParser = createMonthlyUserCountsParser(subParser)
+### MONTHLYUSERLISTS PARSER ###
+monthlyUserListsParser = createMonthlyUserListsParser(subParser)
 
 ### RUN THAT BUSINESS
-args = mainParser.parse_args()
-args.func(args)
+if __name__ == '__main__':
+  args = mainParser.parse_args()
+  args.func(args)

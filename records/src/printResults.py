@@ -1,76 +1,61 @@
 from __future__ import print_function
 from calendar import month_abbr
+import pandas as pd
 
-def span(pred, xs):
-  fst = []
-  snd = list(xs)
-  for i in range(len(xs)):
-    if pred(xs[i]):
-      fst.append(snd[0])
-      snd.pop(0)
+def fillMonths(labels, results, startYear, startMonth, endYear, endMonth):
+  # Assumes year is results[0], month is results[1]
+  def getYear(result):
+    return result[0]
+  def getMonth(result):
+    return result[1]
+  def dateExistsAtIdx(year, month, results, idx):
+    if idx < len(results):
+      return getYear(results[idx]) == year and getMonth(results[idx]) == month
     else:
-      break
-  return (fst, snd)
+      return False
+  def emptyRecord(year, month):
+    emptyRecord = [year, month] + ['-']*(len(labels) - 2)
+    try:
+      emptyRecord[labels.index('uniqueUsers')] = 0
+    except:
+      pass
+    try:
+      emptyRecord[labels.index('uniqueLoads')] = 0
+    except:
+      pass
+    return tuple(emptyRecord)
 
-def split(idx, xs):
-  return (xs[:idx], xs[idx:])
+  resultsIdx = 0
+  year = startYear
+  month = startMonth
+  while year <= endYear:
+    while (year < endYear and month <= 12) or (year == endYear and month < endMonth):
+      # Add in empty records if the given year / month combo does not exist
+      if not dateExistsAtIdx(year, month, results, resultsIdx):
+        results.insert(resultsIdx, emptyRecord(year, month))
+        resultsIdx = resultsIdx + 1
+      # If it does exist, increment the resultsIdx until we get to a different
+      # year / month
+      else:
+        while dateExistsAtIdx(year, month, results, resultsIdx):
+          resultsIdx = resultsIdx + 1
+      month = month + 1
+    month = 1
+    year = year + 1
 
-def printResults(labels, results, dateTabWidth, dataTabWidth,
+def printResults(labels, results, fillInMonths=False,
+                 startYear=None, startMonth=None, endYear=None, endMonth=None,
                  consistentColumns=False, noHeaders=False, tabSeparators=False):
-  dateNames = ['timespan', 'year', 'month', 'day']
-  dateColumns, dataColumns = span(lambda x: x in dateNames, labels)
-  if 'timespan' in dateColumns:
-    dateColumns = []
-  if 'month' in dateColumns:
-    monthIdx = dateColumns.index('month')
+  if(fillInMonths):
+    fillMonths(labels, results, startYear, startMonth, endYear, endMonth)
+  indices = labels[:-1]
+  table = pd.DataFrame(results, columns=labels) \
+            .set_index(indices)
+  if table.empty:
+    table = "No records in database"
   else:
-    monthIdx = None
-
-  ### CONSTRUCT THE LABEL
-  dateIdx = 0
-  dataIdx = len(dateColumns)
-  if not tabSeparators:
-    labelStr = "".join([str(l).ljust(dateTabWidth) for l in dateColumns])
-    labelStr += "".join([str(l).ljust(dataTabWidth) for l in dataColumns])
-    labelStr += "\n" + "="*len(labelStr)
-  else:
-    labelStr = "\t".join(map(str, dateColumns + dataColumns))
-    labelStr += "\n" + "="*len(labelStr)
-
-  ### FORMAT THE DATA
-  resultStr = ""
-  dateDelta = [None] * len(dateColumns)
-  dataDelta = [None] * len(dataColumns)
-  delta = [None] * (len(dateColumns) + len(dataColumns))
-  for result in results:
-    result = list(result)
-    if monthIdx:
-      result[monthIdx] = month_abbr[result[monthIdx]]
-    if not consistentColumns:
-      for i in range(len(result)):
-        if delta[i] != result[i]:
-          deltaIdx = i
-          break
-      delta = result
-    else:
-      deltaIdx = 0
-    # Whitespace
-    if not tabSeparators:
-        resultStr += "".join(["".ljust(dateTabWidth) 
-                              for i in range(dateIdx, min(deltaIdx, dataIdx))])
-        resultStr += "".join(["".ljust(dataTabWidth) 
-                              for i in range(min(deltaIdx, dataIdx), deltaIdx)])
-        # Content
-        resultStr += "".join([str(r).ljust(dateTabWidth)
-                              for r in result[deltaIdx:max(deltaIdx, dataIdx)]])
-        resultStr += "".join([str(r).ljust(dataTabWidth)
-                              for r in result[max(deltaIdx, dataIdx):]])
-    else:
-        resultStr += "\t"*(min(deltaIdx, dataIdx) - dateIdx)
-        resultStr += "\t"*(deltaIdx - min(deltaIdx, dataIdx))
-        # Content
-        resultStr += "\t".join(map(str, result[deltaIdx:]))
-    resultStr += "\n"
-  if not noHeaders:
-    print(labelStr)
-  print(resultStr)
+    table = table.to_string(sparsify=not consistentColumns,
+                            header=not noHeaders,
+                            index_names= not noHeaders)
+  print(table)
+  return table
