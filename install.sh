@@ -36,6 +36,7 @@ virtualenv env
 env/bin/pip install sqlalchemy
 env/bin/pip install sqlalchemy-utils
 env/bin/pip install argparse
+env/bin/pip install pandas
 source env/bin/activate
 python ./records/createDatabase.py
 

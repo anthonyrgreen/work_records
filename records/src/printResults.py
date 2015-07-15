@@ -15,14 +15,11 @@ def fillMonths(labels, results, startYear, startMonth, endYear, endMonth):
       return False
   def emptyRecord(year, month):
     emptyRecord = [year, month] + ['-']*(len(labels) - 2)
-    try:
-      emptyRecord[labels.index('uniqueUsers')] = 0
-    except:
-      pass
-    try:
-      emptyRecord[labels.index('uniqueLoads')] = 0
-    except:
-      pass
+    for label in ['uniqueUsers', 'numLoads']:
+      try:
+        emptyRecord[labels.index(label)] = 0
+      except:
+        pass
     return tuple(emptyRecord)
 
   resultsIdx = 0
@@ -43,11 +40,22 @@ def fillMonths(labels, results, startYear, startMonth, endYear, endMonth):
     month = 1
     year = year + 1
 
+def labelMonths(labels, results):
+  try:
+    monthIdx = labels.index('month')
+    for i in range(len(results)):
+      result1 = list(results[i])
+      result1[monthIdx] = month_abbr[result1[monthIdx]]
+      results[i] = tuple(result1)
+  finally:
+    return results
+
 def printResults(labels, results, fillInMonths=False,
                  startYear=None, startMonth=None, endYear=None, endMonth=None,
                  consistentColumns=False, noHeaders=False, tabSeparators=False):
   if(fillInMonths):
     fillMonths(labels, results, startYear, startMonth, endYear, endMonth)
+  labelMonths(labels, results)
   indices = labels[:-1]
   table = pd.DataFrame(results, columns=labels) \
             .set_index(indices)
